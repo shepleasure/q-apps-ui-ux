@@ -3,26 +3,171 @@
 <head>
 	<title>Q-Library | Admin</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Bootstrap CDN -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<!-- End of Bootstrap CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="container-fluid">
+ 	<div class="container-fluid">
 		<div class="row header">
 			<div class="col-xs-4">
 				<img src="images/logo.png" class="img-header" alt="Q-Library Logo"/>
 			</div>
-			<div class="col-xs-6 col-xs-offset-2 text-right">
-				<div class="row">
-					<p><a href="#" class="sign-out">Sign out<i class="glyphicon glyphicon-log-out"></i></span></a></p>	
-				</div>
-				<div class="row">
-					<p class="user">Krishnaprasad Varma</p>
+			<div class="col-xs-6 col-xs-offset-2 text-right user">
+				<ul class="nav navbar-nav navbar-right">
+        			<li>
+        				<a href="#"><span class="glyphicon glyphicon-user"></span> Krishnaprasad Varma</a>
+        			</li>
+        			<li>
+        				<a href="#"><span class="glyphicon glyphicon-log-out" id="sign-out"></span> Sign out</a>
+        			</li>
+      			</ul>
+			</div>
+		</div>
+		<div class="row">
+			<nav class="navbar navbar-default navbar-custom">
+      			<ul class="nav navbar-nav">
+        			<li class="active"><a href="#">Manage Books</a></li>
+        			<li><a href="#">Configurations</a></li>
+      			</ul>
+      			<ul class="nav navbar-nav navbar-right">
+        			<li><a href="#" class="btn btn-primary btn-custom">Add a Book</a></li>
+        			<li>
+        				<form class="navbar-form" role="search">
+        					<div class="input-group">
+            					<input type="text" class="form-control" placeholder="Search" name="search-term" id="search-term">
+            					<div class="input-group-btn">
+                					<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            					</div>
+        					</div>
+       					</form>
+        			</li>
+				</ul>
+    		</nav>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row heading">
+			<h2 class="text-center">Manage Books</h2>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 side-bar">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active">
+						<a href="#">
+							<h4>DevOps for Developers <span class="badge">2</span></h4>
+		  					<p><span class="author">Michael Httermann</span></p>
+		  					<p>Apress</p>
+						</a>
+					</li>
+	        		<li>
+	        			<a href="#">
+	        				<h4>The Docker Book <span class="badge">2</span></h4>
+	  						<p><span class="author">James Turnbull</span></p>
+	  						<p>James Turnbull</p>
+	        			</a>
+	        		</li>
+	        		<li>
+	        			<a href="#">
+	        				<h4>Docker Hands on <span class="badge">5</span></h4>
+	  						<p><span class="author">Navin Sabharwal, Bibin W</span></p>
+	  						<p>Amazon Digital South Asia Services</p>
+	        			</a>
+	        		</li>
+	        		<li>
+	        			<a href="#">
+	        				<h4>Ansible: Up and Running <span class="badge">2</span></h4>
+	  						<p><span class="author">Lorin Hochstein</span></p>
+	  						<p>O'Reilly Media</p>
+	        			</a>
+	        		</li>
+				</ul>
+			</div>
+			<div class="col-sm-8 description">
+				<div class="panel panel-default">
+  					<div class="panel-heading">
+  						<div class="dropdown pull-right">
+  							<a href="#" data-toggle="dropdown" class="btn btn-info btn-lg btn-menu dropdown-toggle">
+          					<span class="glyphicon glyphicon-option-horizontal"></span>
+        					</a>
+        					<ul class="dropdown-menu">
+      							<li><a href="#">Edit</a></li>
+      							<li><a href="#">Delete</a></li>
+      							<li><a href="#">Register a Book</a></li>
+    						</ul>
+  						</div>
+  						<h4>DevOps for Developers <span class="badge">2</span></h4>
+		  				<p><span class="author">Michael Httermann</span></p>
+		  				<p>Apress, 2014 Edition</p>
+  					</div>
+  					<div class="panel-body">
+  						<p>
+  						DevOps for Developers delivers a practical, thorough introduction to approaches, processes and tools to foster collaboration between software development and operations.
+  						</p>
+  						<br />
+  						<p><strong>Details</strong></p>
+  						<hr>
+  						<table class="table table-striped">
+      						<tr>
+						        <td>Title</td>
+						        <td>DevOps for Developers</td>
+						    </tr>
+						    <tr>
+						        <td>Author</td>
+						        <td>Michael Httermann</td>
+						    </tr>
+						    <tr>
+						        <td>Publisher</td>
+						        <td>Apress</td>
+						    </tr>
+						    <tr>
+						        <td>Publisher</td>
+						        <td>Apress</td>
+						    </tr>
+						    <tr>
+						        <td>Edition/Year</td>
+						        <td>2014</td>
+						    </tr>
+						    <tr>
+						        <td>ISBN</td>
+						        <td>1430245697</td>
+						    </tr>
+						    <tr>
+						        <td>No of Books</td>
+						        <td>2</td>
+						    </tr>
+						    <tr>
+						        <td>Link 1</td>
+						        <td>http://www.amazon.in/1430245697</td>
+						    </tr>
+						    <tr>
+						        <td>Link 2</td>
+						        <td>http://www.amazon.in/916312312</td>
+						    </tr>
+						    <tr>
+						        <td>Created At</td>
+						        <td>1st August 2014</td>
+						    </tr>
+						    <tr>
+						        <td>Updated At</td>
+						        <td>1st August 2014</td>
+						    </tr>
+  						</table>
+  					</div>
+  					<div class="panel-footer">
+  						<div class="pull-right">
+  							<a href="#" class="btn btn-primary btn-custom">Add a Book</a></li>
+  						</div>
+  						<p><strong>Registered Books</strong></p>
+
+  					</div>
 				</div>
 			</div>
 		</div>
