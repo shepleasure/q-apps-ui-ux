@@ -11,8 +11,11 @@
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<!-- End of Bootstrap CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="http://malsup.github.com/jquery.form.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alike' rel='stylesheet' type='text/css'>
 </head>
 <body>
  	<div class="container-fluid">
@@ -38,11 +41,59 @@
         			<li><a href="#">Configurations</a></li>
       			</ul>
       			<ul class="nav navbar-nav navbar-right">
-        			<li><a href="#" class="btn btn-primary btn-custom">Add a Book</a></li>
-        			<li>
+        			<li><a href="#" class="btn btn-primary btn-custom" data-toggle="modal" data-target="#addBook">Add a Book</a></li>							  
+        			<!-- Add a Book Div -->
+						<div class="modal fade" id="addBook" role="dialog">
+							<div class="modal-dialog">
+							  	<!-- Div content-->
+							    <div class="modal-content">
+							        <div class="modal-header">
+							          <button type="button" class="close" data-dismiss="modal">&times;</button>
+							          <h4 class="modal-title">Add a Book</h4>
+							        </div>
+							        <div class="modal-body">
+							          	<form role="form">
+										  <div class="form-group">
+										    <input type="text" class="form-control" id="title" placeholder="Title of the book">
+										  </div>
+										  <div class="form-group">
+										    <input type="text" class="form-control" id="author" placeholder="Author(s)">
+										  </div>
+										  <div class="form-group col-sm-6 inline-custom">
+										    <input type="text" class="form-control" id="publisher" placeholder="Publisher">
+										  </div>
+										  <div class="form-group col-sm-6 inline-custom">
+										    <input type="text" class="form-control" id="year" placeholder="Year">
+										  </div>
+										  <div class="form-group">
+										    <input type="text" class="form-control" id="isbn" placeholder="ISBN">
+										  </div>
+										  <div class="form-group">
+										    <input type="text" class="form-control" id="link1" placeholder="Link 1">
+										  </div>
+										  <div class="form-group">
+										    <input type="text" class="form-control" id="link2" placeholder="Link 2">
+										  </div>
+										  <div class="form-group">
+										    <textarea class="form-control" rows="5" id="description" placeholder="Description"></textarea>
+										  </div>
+										</form>
+							        </div>
+							        <div class="modal-footer">
+							        	<button type="button" class="btn btn-default btn-custom-2 pull-right">Save</button>
+  										<p class="text-left orange-color"><span class="glyphicon glyphicon-bell"></span><strong>Click on the Save button once you are done.</strong></p>
+  										<p class="text-left save-align">You can always edit it once it is saved.</p>
+							        </div>
+							    </div> 
+							<!-- End of Div content-->
+							</div>
+						</div>
+
+					<!-- End of Add a Book Div -->
+					<li>
         				<form class="navbar-form" role="search">
         					<div class="input-group">
-            					<input type="text" class="form-control" placeholder="Search" name="search-term" id="search-term">
+            					<input type="text" class="form-control" placeholder="Search Books.." name="search-term" id="search-term">
             					<div class="input-group-btn">
                 					<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
             					</div>
@@ -57,6 +108,7 @@
 		<div class="row heading">
 			<h2 class="text-center">Manage Books</h2>
 		</div>
+		<br /
 		<div class="row">
 			<div class="col-sm-4 side-bar">
 				<ul class="nav nav-pills nav-stacked">
@@ -64,28 +116,28 @@
 						<a href="#">
 							<h4>DevOps for Developers <span class="badge">2</span></h4>
 		  					<p><span class="author">Michael Httermann</span></p>
-		  					<p>Apress</p>
+		  					<p class="publication">Apress</p>
 						</a>
 					</li>
 	        		<li>
 	        			<a href="#">
 	        				<h4>The Docker Book <span class="badge">2</span></h4>
 	  						<p><span class="author">James Turnbull</span></p>
-	  						<p>James Turnbull</p>
+	  						<p class="publication">James Turnbull</p>
 	        			</a>
 	        		</li>
 	        		<li>
 	        			<a href="#">
 	        				<h4>Docker Hands on <span class="badge">5</span></h4>
 	  						<p><span class="author">Navin Sabharwal, Bibin W</span></p>
-	  						<p>Amazon Digital South Asia Services</p>
+	  						<p class="publication">Amazon Digital South Asia Services</p>
 	        			</a>
 	        		</li>
 	        		<li>
 	        			<a href="#">
 	        				<h4>Ansible: Up and Running <span class="badge">2</span></h4>
 	  						<p><span class="author">Lorin Hochstein</span></p>
-	  						<p>O'Reilly Media</p>
+	  						<p class="publication">O'Reilly Media</p>
 	        			</a>
 	        		</li>
 				</ul>
@@ -94,19 +146,67 @@
 				<div class="panel panel-default">
   					<div class="panel-heading">
   						<div class="dropdown pull-right">
-  							<a href="#" data-toggle="dropdown" class="btn btn-info btn-lg btn-menu dropdown-toggle">
-          					<span class="glyphicon glyphicon-option-horizontal"></span>
-        					</a>
-        					<ul class="dropdown-menu">
-      							<li><a href="#">Edit</a></li>
-      							<li><a href="#">Delete</a></li>
-      							<li><a href="#">Register a Book</a></li>
-    						</ul>
-  						</div>
+							<button type="button" class="btn btn-info btn-lg btn-menu dropdown-toggle" data-toggle="dropdown">
+ 							<span class="glyphicon glyphicon-option-horizontal"></span>
+ 							</button>
+ 							<ul class="dropdown-menu" role="menu">
+								<li><a href="#" data-toggle="modal" data-target="#editBook"> Edit</a></li>
+  								<li><a href="#">Delete</a></li>
+     							<li><a href="#" data-toggle="modal" data-target="#registerBook">Register</a></li>
+  							</ul>
+						</div>
   						<h4>DevOps for Developers <span class="badge">2</span></h4>
 		  				<p><span class="author">Michael Httermann</span></p>
 		  				<p>Apress, 2014 Edition</p>
   					</div>
+      				<!-- Edit Book Details Div -->
+					<div class="modal fade" id="editBook" role="dialog">
+						<div class="modal-dialog">
+						<!-- Div content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Edit Book Details</h4>
+							</div>
+							<div class="modal-body">
+								<form role="form">
+									<div class="form-group">
+										<input type="text" class="form-control" id="title" placeholder="Title of the book" value="DevOps for Developers">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="author" placeholder="Author(s)" value="Michael Httermann">
+										</div>
+									<div class="form-group col-sm-6 inline-custom">
+										<input type="text" class="form-control" id="publisher" placeholder="Publisher" value="Apress">
+									</div>
+									<div class="form-group col-sm-6 inline-custom">
+										<input type="text" class="form-control" id="year" placeholder="Year" value="2014">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="isbn" placeholder="ISBN" value="1430245697">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="link1" placeholder="Link 1" value="http://www.amazon.in/1430245697">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="link2" placeholder="Link 2">
+									</div>
+									<div class="form-group">
+										<textarea class="form-control" rows="5" id="description" placeholder="Description">DevOps for Developers delivers a practical, thorough introduction to approaches, processes and tools to foster collaboration between software development and operations."</textarea>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default btn-custom-2 pull-right">Save</button>
+			  					<p class="text-left orange-color"><span class="glyphicon glyphicon-bell"></span><strong>Click on the Save button once you are done.</strong></p>
+			  					<p class="text-left save-align">You can always edit it once it is saved.</p>
+							</div>
+						</div> 
+						<!-- End of Div content-->
+						</div>
+					</div>
+					<!-- End of Edit Book Details Div -->			        
+  						
   					<div class="panel-body">
   						<p>
   						DevOps for Developers delivers a practical, thorough introduction to approaches, processes and tools to foster collaboration between software development and operations.
@@ -128,10 +228,6 @@
 						        <td>Apress</td>
 						    </tr>
 						    <tr>
-						        <td>Publisher</td>
-						        <td>Apress</td>
-						    </tr>
-						    <tr>
 						        <td>Edition/Year</td>
 						        <td>2014</td>
 						    </tr>
@@ -145,11 +241,11 @@
 						    </tr>
 						    <tr>
 						        <td>Link 1</td>
-						        <td>http://www.amazon.in/1430245697</td>
+						        <td><a href="http://www.amazon.in/1430245697">http://www.amazon.in/1430245697</a></td>
 						    </tr>
 						    <tr>
 						        <td>Link 2</td>
-						        <td>http://www.amazon.in/916312312</td>
+						        <td><a href="http://www.amazon.in/916312312">http://www.amazon.in/916312312</a></td>
 						    </tr>
 						    <tr>
 						        <td>Created At</td>
@@ -163,27 +259,96 @@
   					</div>
   					<div class="panel-footer">
   						<div class="pull-right">
-  							<a href="#" id="register" class="btn btn-primary btn-custom">Register a Book</a></li>
+  							<button id="register" class="btn btn-primary btn-custom" data-toggle="modal" data-target="#registerBook">Register a Book</a></li>
   						</div>
   						<p><strong>Registered Books (2)</strong></p>
   						<br />
+	        			<!-- Register a Book Div -->
+							<div class="modal fade" id="registerBook" role="dialog">
+								<div class="modal-dialog">
+								  	<!-- Div content-->
+								    <div class="modal-content">
+								        <div class="modal-header">
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								          <h4 class="modal-title">Register a Book</h4>
+								        </div>
+								        <div class="modal-body">
+								        	<div class="alert alert-success">
+  												<p><span class="glyphicon glyphicon-info-sign"></span><strong>Add the serial number (some unique number to identify the book)</strong></p>
+  												<p class="save-align">You have added the book, now you need to register all the books you have purchased. for e.g: If you have purchased 10 copies of 'Extreme Programming' by Kent Beck, Register all the 10 books here so that you can track who has taken which book.</p>
+											</div>
+								          	<form role="form">
+											  <div class="form-group">
+											    <input type="text" class="form-control" id="serial-no" placeholder="Sl No">
+											  </div>
+											  <div class="form-group">
+											    <input type="text" class="form-control" id="purchase-date" placeholder="Purchase Date">
+											  </div>
+											</form>
+								        </div>
+								        <div class="modal-footer">
+								        	<button type="button" class="btn btn-default btn-custom-2 pull-right">Register</button>
+								        </div>
+								    </div> 
+								<!-- End of Div content-->
+								</div>
+							</div>
+
+						<!-- End of Register a Book Div -->
+
   						<div class="panel-group">
 	  						<div class="panel panel-default">
 	  							<div class="panel-body">
 	  								<div class="pull-right">
 	  									<button type="button" class="btn btn-sm btn-default" disabled="disabled">Update as Returned</button>
-	  									<span class="glyphicon glyphicon-edit"></span>
-	  									<span class="glyphicon glyphicon-trash"></span>
+	  									<a class="icon-btn" data-toggle="modal" data-target="#editRegister">
+	  										<span class="glyphicon glyphicon-edit"></span>
+	  									</a>
+	  									<a class="icon-btn">
+	  										<span class="glyphicon glyphicon-trash"></span>
+	  									</a>
 	  								</div>
 	  								<p>123891723</p>
 	  							</div>
 	  						</div>
+	  						<!-- Add a Book Div -->
+							<div class="modal fade" id="editRegister" role="dialog">
+								<div class="modal-dialog">
+								  	<!-- Div content-->
+								    <div class="modal-content">
+								        <div class="modal-header">
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								          <h4 class="modal-title">Edit Registration Details</h4>
+								        </div>
+								        <div class="modal-body">
+								          	<form role="form">
+											  <div class="form-group">
+											    <input type="text" class="form-control" id="serial-no" placeholder="Sl No" value="18278921763">
+											  </div>
+											  <div class="form-group">
+											    <input type="text" class="form-control" id="purchase-date" placeholder="Purchase Date" value="11/12/2014">
+											  </div>
+											</form>
+								        </div>
+								        <div class="modal-footer">
+								        	<button type="button" class="btn btn-default btn-custom-2 pull-right">Register</button>
+								        </div>
+								    </div> 
+								<!-- End of Div content-->
+								</div>
+							</div>
+
+						<!-- End of Add a Book Div -->
 	  						<div class="panel panel-default active-book">
 	  							<div class="panel-body">
 	  								<div class="pull-right">
-	  									<button type="button" class="btn btn-sm btn-default btn-custom-2">Update as Returned</button>
-	  									<span class="glyphicon glyphicon-edit"></span>
-	  									<span class="glyphicon glyphicon-trash"></span>
+	  									<button type="button" class="btn btn-sm btn-default btn-custom-2">Update as Borrowed</button>
+	  									<a class="icon-btn" data-toggle="modal" data-target="#editRegister">
+	  										<span class="glyphicon glyphicon-edit"></span>
+	  									</a>
+	  									<a class="icon-btn">
+	  										<span class="glyphicon glyphicon-trash"></span>
+	  									</a>
 	  								</div>
 	  								<p>123891723</p>
 	  							</div>

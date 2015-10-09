@@ -1,5 +1,6 @@
 body {
-  background-color: #6D6E70 !important; 
+  background-color: #6D6E70 !important;  
+  font-style: 'Roboto', sans-serif !important; 
 }
 .form-signin .form-control {
   font-size: 16px;
@@ -30,11 +31,11 @@ body {
 .btn-success:active {
   border-color: #22C976 !important;
 }
-.glyphicon-user, .glyphicon-lock, .glyphicon-log-out, .glyphicon-search{
+.glyphicon {
   color: #22C976;
 }
-.glyphicon-edit, .glyphicon-trash {
-  padding: 0px 2px 0px 2px;
+.glyphicon-edit, .glyphicon-trash, .glyphicon-bell, .glyphicon-info-sign {
+  padding: 0px 3px 0px 3px;
 }
 .glyphicon-log-out:hover {
   color: #1b9d5c !important;
@@ -97,8 +98,11 @@ p, a{
   text-decoration: none !important;
   background-color: #fff !important;;
 }
-.author {
+.author ,.orange-color {
   color: #E9694E;
+}
+.author-user {
+  color: #6d6e70;
 }
 .badge {
   background-color: #22C976 !important;
@@ -111,25 +115,35 @@ p, a{
 .side-bar li.active>a {
    background-color: #4d4d4d !important;
 }
-.side-bar li.active>a p {
-  color: #fff !important;
-}
 .side-bar h4 {
   color: #22C976 !important;
-}
-.side-bar p {
-  color: #4D4D4D !important;
 }
 .heading h2 {
   color: #fff;
   font-family: 'Roboto', sans-serif;
 }
-.description h4 {
-  font-weight: bold;
-}
-.active-book p {
+.active-book .glyphicon, .active-book p, .green-color{
   color: #22C976;
 }
-.active-book .glyphicon {
-  color: #22C976;
+.inline-custom {
+  padding: 2px !important;
+}
+.save-align {
+  padding-left: 20px;
+}
+ .modal-header, .modal-title, .close {
+  background-color: #22C976;
+  color:white !important;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif !important; 
+}
+.icon-btn {
+  cursor: pointer;
+}
+.danger {
+  color: #d9534f !important;
+}
+.publication {
+  color: #c8c8c8;
 }
