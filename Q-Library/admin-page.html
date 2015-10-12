@@ -36,11 +36,19 @@
 		</div>
 		<div class="row">
 			<nav class="navbar navbar-default navbar-custom">
-      			<ul class="nav navbar-nav">
+      			<ul class="nav navbar-nav menu">
         			<li class="active"><a href="#">Manage Books</a></li>
         			<li><a href="#">Configurations</a></li>
       			</ul>
-      			<ul class="nav navbar-nav navbar-right">
+    		</nav>
+    	</div>
+    	<div class="row sub-header">
+    		<div class="col-sm-4">
+    			<h2>Manage Books</h2>
+    			<br />
+    		</div>
+    		<div class="col-sm-8">
+    			<ul class="nav navbar-nav navbar-right">
         			<li><a href="#" class="btn btn-primary btn-custom" data-toggle="modal" data-target="#addBook">Add a Book</a></li>							  
         			<!-- Add a Book Div -->
 						<div class="modal fade" id="addBook" role="dialog">
@@ -71,8 +79,12 @@
 										  <div class="form-group">
 										    <input type="text" class="form-control" id="link1" placeholder="Link 1">
 										  </div>
-										  <div class="form-group">
-										    <input type="text" class="form-control" id="link2" placeholder="Link 2">
+										  <div class="form-group has-error has-feedback">
+      											<label class="control-label" for="inputError">Input with error and glyphicon</label>
+										  		<div class="form-group">
+										    		<input type="text" class="form-control" id="inputError" placeholder="Link 2">
+										    		<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+										  		</div>
 										  </div>
 										  <div class="form-group">
 										    <textarea class="form-control" rows="5" id="description" placeholder="Description"></textarea>
@@ -101,14 +113,11 @@
        					</form>
         			</li>
 				</ul>
-    		</nav>
+    		</div>
 		</div>
 	</div>
 	<div class="container">
-		<div class="row heading">
-			<h2 class="text-center">Manage Books</h2>
-		</div>
-		<br /
+		
 		<div class="row">
 			<div class="col-sm-4 side-bar">
 				<ul class="nav nav-pills nav-stacked">
@@ -188,8 +197,12 @@
 									<div class="form-group">
 										<input type="text" class="form-control" id="link1" placeholder="Link 1" value="http://www.amazon.in/1430245697">
 									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" id="link2" placeholder="Link 2">
+									<div class="form-group has-error has-feedback">
+      									<label class="control-label" for="inputError">Input with error and glyphicon</label>
+										<div class="form-group">
+										    <input type="text" class="form-control" id="inputError" placeholder="Link 2">
+										    <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+										</div>
 									</div>
 									<div class="form-group">
 										<textarea class="form-control" rows="5" id="description" placeholder="Description">DevOps for Developers delivers a practical, thorough introduction to approaches, processes and tools to foster collaboration between software development and operations."</textarea>
@@ -259,7 +272,7 @@
   					</div>
   					<div class="panel-footer">
   						<div class="pull-right">
-  							<button id="register" class="btn btn-primary btn-custom" data-toggle="modal" data-target="#registerBook">Register a Book</a></li>
+  							<button id="register" class="btn btn-sm btn-primary btn-custom" data-toggle="modal" data-target="#registerBook">Register a Book</a></li>
   						</div>
   						<p><strong>Registered Books (2)</strong></p>
   						<br />
@@ -300,7 +313,7 @@
 	  						<div class="panel panel-default">
 	  							<div class="panel-body">
 	  								<div class="pull-right">
-	  									<button type="button" class="btn btn-sm btn-default" disabled="disabled">Update as Returned</button>
+	  									<button type="button" class="btn btn-xs btn-default" disabled="disabled">Update as Returned</button>
 	  									<a class="icon-btn" data-toggle="modal" data-target="#editRegister">
 	  										<span class="glyphicon glyphicon-edit"></span>
 	  									</a>
@@ -308,7 +321,7 @@
 	  										<span class="glyphicon glyphicon-trash"></span>
 	  									</a>
 	  								</div>
-	  								<p>123891723</p>
+	  								<p><a class="publication" href="#">123891723</a></p>
 	  							</div>
 	  						</div>
 	  						<!-- Add a Book Div -->
@@ -342,7 +355,7 @@
 	  						<div class="panel panel-default active-book">
 	  							<div class="panel-body">
 	  								<div class="pull-right">
-	  									<button type="button" class="btn btn-sm btn-default btn-custom-2">Update as Borrowed</button>
+	  									<button type="button" class="btn btn-xs btn-default btn-custom-2">Update as Borrowed</button>
 	  									<a class="icon-btn" data-toggle="modal" data-target="#editRegister">
 	  										<span class="glyphicon glyphicon-edit"></span>
 	  									</a>
@@ -350,7 +363,7 @@
 	  										<span class="glyphicon glyphicon-trash"></span>
 	  									</a>
 	  								</div>
-	  								<p>123891723</p>
+	  								<p><a class="green-color" href="#">123891723</a></p>
 	  							</div>
 	  						</div>
 	  					</div>

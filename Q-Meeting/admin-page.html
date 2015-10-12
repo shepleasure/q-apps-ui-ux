@@ -1,28 +1,352 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Q-Library | Admin</title>
+	<title>Q-Meeting | Admin</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Bootstrap CDN -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<!-- End of Bootstrap CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="http://malsup.github.com/jquery.form.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Alike' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="container-fluid">
+ 	<div class="container-fluid">
 		<div class="row header">
 			<div class="col-xs-4">
-				<img src="images/logo.png" class="img-header" alt="Q-Library Logo"/>
+				<img src="images/logo.png" class="img-header" alt="Q-Meeting Logo"/>
 			</div>
-			<div class="col-xs-6 col-xs-offset-2 text-right">
-				<div class="row">
-					<p><a href="#" class="sign-out">Sign out<i class="glyphicon glyphicon-log-out"></i></span></a></p>	
-				</div>
-				<div class="row">
-					<p class="user">Krishnaprasad Varma</p>
+			<div class="col-xs-6 col-xs-offset-2 text-right user">
+				<ul class="nav navbar-nav navbar-right">
+        			<li>
+        				<a href="#"><span class="glyphicon glyphicon-user"></span> Krishnaprasad Varma</a>
+        			</li>
+        			<li>
+        				<a href="#"><span class="glyphicon glyphicon-log-out" id="sign-out"></span> Sign out</a>
+        			</li>
+      			</ul>
+			</div>
+		</div>
+		<div class="row">
+			<nav class="navbar navbar-default navbar-custom">
+      			<ul class="nav navbar-nav menu">
+        			<li class="active"><a href="#">Manage Venues</a></li>
+        			<li><a href="#">Configurations</a></li>
+      			</ul>
+    		</nav>
+    	</div>
+    	<div class="row sub-header">
+    		<div class="col-sm-4">
+    			<h2>Manage Venues</h2>
+    			<br />
+    		</div>
+    		<div class="col-sm-8">
+    			<ul class="nav navbar-nav navbar-right">
+        			<li><a href="#" class="btn btn-primary btn-custom" data-toggle="modal" data-target="#addVenue">Add Venue</a></li>							  
+        			<!-- Add a Book Div -->
+						<div class="modal fade" id="addVenue" role="dialog">
+							<div class="modal-dialog">
+							  	<!-- Div content-->
+							    <div class="modal-content">
+							        <div class="modal-header">
+							          <button type="button" class="close" data-dismiss="modal">&times;</button>
+							          <h4 class="modal-title">Add Venue</h4>
+							        </div>
+							        <div class="modal-body">
+							          	<form role="form">
+										  <div class="form-group">
+										    <input type="text" class="form-control" id="name" placeholder="Name">
+										  </div>
+										  <div class="form-group">
+										    <textarea class="form-control" rows="5" id="address" placeholder="Address">Qwinix Technologies Pvt. Ltd. Special Plot No. 5, Horizon, HIEMA Convention Center Road, Hebbal Industrial Estate, Mysore – 570016 Tel: +91 821 241 3535 Email: info-india@qwinixtech.com
+										    </textarea>
+										  </div>
+										</form>
+							        </div>
+							        <div class="modal-footer">
+							        	<button type="button" class="btn btn-default btn-custom-2 pull-right">Save</button>
+  										<p class="text-left orange-color"><span class="glyphicon glyphicon-bell"></span><strong>Click on the Save button once you are done.</strong></p>
+  										<p class="text-left save-align">You can always edit it once it is saved.</p>
+							        </div>
+							    </div> 
+							<!-- End of Div content-->
+							</div>
+						</div>
+
+					<!-- End of Add a Book Div -->
+					<li>
+        				<form class="navbar-form" role="search">
+        					<div class="input-group">
+            					<input type="text" class="form-control" placeholder="Search Books.." name="search-term" id="search-term">
+            					<div class="input-group-btn">
+                					<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            					</div>
+        					</div>
+       					</form>
+        			</li>
+				</ul>
+    		</div>
+		</div>
+	</div>
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-sm-4 side-bar">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active">
+						<a href="#">
+							<h4>DevOps for Developers <span class="badge">2</span></h4>
+		  					<p><span class="author">Michael Httermann</span></p>
+		  					<p class="publication">Apress</p>
+						</a>
+					</li>
+	        		<li>
+	        			<a href="#">
+	        				<h4>The Docker Book <span class="badge">2</span></h4>
+	  						<p><span class="author">James Turnbull</span></p>
+	  						<p class="publication">James Turnbull</p>
+	        			</a>
+	        		</li>
+	        		<li>
+	        			<a href="#">
+	        				<h4>Docker Hands on <span class="badge">5</span></h4>
+	  						<p><span class="author">Navin Sabharwal, Bibin W</span></p>
+	  						<p class="publication">Amazon Digital South Asia Services</p>
+	        			</a>
+	        		</li>
+	        		<li>
+	        			<a href="#">
+	        				<h4>Ansible: Up and Running <span class="badge">2</span></h4>
+	  						<p><span class="author">Lorin Hochstein</span></p>
+	  						<p class="publication">O'Reilly Media</p>
+	        			</a>
+	        		</li>
+				</ul>
+			</div>
+			<div class="col-sm-8 description">
+				<div class="panel panel-default">
+  					<div class="panel-heading">
+  						<div class="dropdown pull-right">
+							<button type="button" class="btn btn-info btn-lg btn-menu dropdown-toggle" data-toggle="dropdown">
+ 							<span class="glyphicon glyphicon-option-horizontal"></span>
+ 							</button>
+ 							<ul class="dropdown-menu" role="menu">
+								<li><a href="#" data-toggle="modal" data-target="#editBook"> Edit</a></li>
+  								<li><a href="#">Delete</a></li>
+     							<li><a href="#" data-toggle="modal" data-target="#registerBook">Register</a></li>
+  							</ul>
+						</div>
+  						<h4>DevOps for Developers <span class="badge">2</span></h4>
+		  				<p><span class="author">Michael Httermann</span></p>
+		  				<p>Apress, 2014 Edition</p>
+  					</div>
+      				<!-- Edit Book Details Div -->
+					<div class="modal fade" id="editBook" role="dialog">
+						<div class="modal-dialog">
+						<!-- Div content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">Edit Book Details</h4>
+							</div>
+							<div class="modal-body">
+								<form role="form">
+									<div class="form-group">
+										<input type="text" class="form-control" id="title" placeholder="Title of the book" value="DevOps for Developers">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="author" placeholder="Author(s)" value="Michael Httermann">
+										</div>
+									<div class="form-group col-sm-6 inline-custom">
+										<input type="text" class="form-control" id="publisher" placeholder="Publisher" value="Apress">
+									</div>
+									<div class="form-group col-sm-6 inline-custom">
+										<input type="text" class="form-control" id="year" placeholder="Year" value="2014">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="isbn" placeholder="ISBN" value="1430245697">
+									</div>
+									<div class="form-group">
+										<input type="text" class="form-control" id="link1" placeholder="Link 1" value="http://www.amazon.in/1430245697">
+									</div>
+									<div class="form-group has-error has-feedback">
+      									<label class="control-label" for="inputError">Input with error and glyphicon</label>
+										<div class="form-group">
+										    <input type="text" class="form-control" id="inputError" placeholder="Link 2">
+										    <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+										</div>
+									</div>
+									<div class="form-group">
+										<textarea class="form-control" rows="5" id="description" placeholder="Description">DevOps for Developers delivers a practical, thorough introduction to approaches, processes and tools to foster collaboration between software development and operations."</textarea>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default btn-custom-2 pull-right">Save</button>
+			  					<p class="text-left orange-color"><span class="glyphicon glyphicon-bell"></span><strong>Click on the Save button once you are done.</strong></p>
+			  					<p class="text-left save-align">You can always edit it once it is saved.</p>
+							</div>
+						</div> 
+						<!-- End of Div content-->
+						</div>
+					</div>
+					<!-- End of Edit Book Details Div -->			        
+  						
+  					<div class="panel-body">
+  						<p>
+  						DevOps for Developers delivers a practical, thorough introduction to approaches, processes and tools to foster collaboration between software development and operations.
+  						</p>
+  						<br />
+  						<p><strong>Details</strong></p>
+  						<hr>
+  						<table class="table table-striped">
+      						<tr>
+						        <td>Title</td>
+						        <td>DevOps for Developers</td>
+						    </tr>
+						    <tr>
+						        <td>Author</td>
+						        <td>Michael Httermann</td>
+						    </tr>
+						    <tr>
+						        <td>Publisher</td>
+						        <td>Apress</td>
+						    </tr>
+						    <tr>
+						        <td>Edition/Year</td>
+						        <td>2014</td>
+						    </tr>
+						    <tr>
+						        <td>ISBN</td>
+						        <td>1430245697</td>
+						    </tr>
+						    <tr>
+						        <td>No of Books</td>
+						        <td>2</td>
+						    </tr>
+						    <tr>
+						        <td>Link 1</td>
+						        <td><a href="http://www.amazon.in/1430245697">http://www.amazon.in/1430245697</a></td>
+						    </tr>
+						    <tr>
+						        <td>Link 2</td>
+						        <td><a href="http://www.amazon.in/916312312">http://www.amazon.in/916312312</a></td>
+						    </tr>
+						    <tr>
+						        <td>Created At</td>
+						        <td>1st August 2014</td>
+						    </tr>
+						    <tr>
+						        <td>Updated At</td>
+						        <td>1st August 2014</td>
+						    </tr>
+  						</table>
+  					</div>
+  					<div class="panel-footer">
+  						<div class="pull-right">
+  							<button id="register" class="btn btn-sm btn-primary btn-custom" data-toggle="modal" data-target="#registerBook">Register a Book</a></li>
+  						</div>
+  						<p><strong>Registered Books (2)</strong></p>
+  						<br />
+	        			<!-- Register a Book Div -->
+							<div class="modal fade" id="registerBook" role="dialog">
+								<div class="modal-dialog">
+								  	<!-- Div content-->
+								    <div class="modal-content">
+								        <div class="modal-header">
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								          <h4 class="modal-title">Register a Book</h4>
+								        </div>
+								        <div class="modal-body">
+								        	<div class="alert alert-success">
+  												<p><span class="glyphicon glyphicon-info-sign"></span><strong>Add the serial number (some unique number to identify the book)</strong></p>
+  												<p class="save-align">You have added the book, now you need to register all the books you have purchased. for e.g: If you have purchased 10 copies of 'Extreme Programming' by Kent Beck, Register all the 10 books here so that you can track who has taken which book.</p>
+											</div>
+								          	<form role="form">
+											  <div class="form-group">
+											    <input type="text" class="form-control" id="serial-no" placeholder="Sl No">
+											  </div>
+											  <div class="form-group">
+											    <input type="text" class="form-control" id="purchase-date" placeholder="Purchase Date">
+											  </div>
+											</form>
+								        </div>
+								        <div class="modal-footer">
+								        	<button type="button" class="btn btn-default btn-custom-2 pull-right">Register</button>
+								        </div>
+								    </div> 
+								<!-- End of Div content-->
+								</div>
+							</div>
+
+						<!-- End of Register a Book Div -->
+
+  						<div class="panel-group">
+	  						<div class="panel panel-default">
+	  							<div class="panel-body">
+	  								<div class="pull-right">
+	  									<button type="button" class="btn btn-xs btn-default" disabled="disabled">Update as Returned</button>
+	  									<a class="icon-btn" data-toggle="modal" data-target="#editRegister">
+	  										<span class="glyphicon glyphicon-edit"></span>
+	  									</a>
+	  									<a class="icon-btn">
+	  										<span class="glyphicon glyphicon-trash"></span>
+	  									</a>
+	  								</div>
+	  								<p><a class="publication" href="#">123891723</a></p>
+	  							</div>
+	  						</div>
+	  						<!-- Add a Book Div -->
+							<div class="modal fade" id="editRegister" role="dialog">
+								<div class="modal-dialog">
+								  	<!-- Div content-->
+								    <div class="modal-content">
+								        <div class="modal-header">
+								          <button type="button" class="close" data-dismiss="modal">&times;</button>
+								          <h4 class="modal-title">Edit Registration Details</h4>
+								        </div>
+								        <div class="modal-body">
+								          	<form role="form">
+											  <div class="form-group">
+											    <input type="text" class="form-control" id="serial-no" placeholder="Sl No" value="18278921763">
+											  </div>
+											  <div class="form-group">
+											    <input type="text" class="form-control" id="purchase-date" placeholder="Purchase Date" value="11/12/2014">
+											  </div>
+											</form>
+								        </div>
+								        <div class="modal-footer">
+								        	<button type="button" class="btn btn-default btn-custom-2 pull-right">Register</button>
+								        </div>
+								    </div> 
+								<!-- End of Div content-->
+								</div>
+							</div>
+
+						<!-- End of Add a Book Div -->
+	  						<div class="panel panel-default active-book">
+	  							<div class="panel-body">
+	  								<div class="pull-right">
+	  									<button type="button" class="btn btn-xs btn-default btn-custom-2">Update as Borrowed</button>
+	  									<a class="icon-btn" data-toggle="modal" data-target="#editRegister">
+	  										<span class="glyphicon glyphicon-edit"></span>
+	  									</a>
+	  									<a class="icon-btn">
+	  										<span class="glyphicon glyphicon-trash"></span>
+	  									</a>
+	  								</div>
+	  								<p><a class="green-color" href="#">123891723</a></p>
+	  							</div>
+	  						</div>
+	  					</div>
+  					</div>
 				</div>
 			</div>
 		</div>
