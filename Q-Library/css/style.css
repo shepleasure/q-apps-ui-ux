@@ -31,7 +31,7 @@ body {
 .btn-success:active {
   border-color: #22C976 !important;
 }
-.glyphicon {
+.glyphicon-edit, .glyphicon-trash {
   color: #22C976;
 }
 .glyphicon-edit, .glyphicon-trash, .glyphicon-bell, .glyphicon-info-sign {
@@ -65,9 +65,9 @@ body {
   margin-top: 0px;
 }
 .btn-menu {
-  border: 2px solid #22C976 !important;
+  border: 2px solid #4D4D4D !important;
   background-color: white !important;
-  color: #22C976 !important;  
+  color: #4D4D4D !important;
   padding: 5px 5px 0px 5px !important;
   height: 30px;
 }
@@ -77,7 +77,7 @@ body {
 .navbar-custom .navbar-nav>li>a {
     color:#fff !important;
 }
-.navbar-custom .navbar-nav>.active>a {
+.navbar-custom .navbar-nav>.active>a   {
   background-color: #4D4D4D !important;
   color: #22C976 !important;
 }
@@ -104,21 +104,21 @@ p, a{
 .author-user {
   color: #6d6e70;
 }
-.badge {
+/*.badge {
   background-color: #22C976 !important;
-}
+}*/
 .side-bar li {
   margin-bottom: 20px;
   background-color: #fff;
   border-radius: 5px;
 }
-.side-bar li.active>a {
+.side-bar li.active>a , .side-bar li a:focus {
    background-color: #4d4d4d !important;
 }
 .side-bar h4 {
   color: #22C976 !important;
 }
-.heading h2 {
+.sub-header h2 {
   color: #fff;
   font-family: 'Roboto', sans-serif;
 }
@@ -146,4 +146,8 @@ p, a{
 }
 .publication {
   color: #c8c8c8;
+}
+.sidebar{
+    background-color: green;
+    height:auto!important;
 }
