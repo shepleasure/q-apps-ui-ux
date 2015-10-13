@@ -24,7 +24,18 @@
 			<div class="col-xs-4">
 				<img src="images/logo.png" class="img-header" alt="Q-Meeting Logo"/>
 			</div>
-			<div class="col-xs-6 col-xs-offset-2 text-right user">
+			<div class="col-xs-4 user">
+				<form class="navbar-form text-center" role="search">
+        			<div class="input-group">
+            			<input type="text" class="form-control" placeholder="Search my Meetings.." name="search-term" id="search-term">
+            			<div class="input-group-btn">
+                			<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i>
+                			</button>
+            			</div>
+        			</div>
+       			</form>
+			</div>
+			<div class="col-xs-4 text-right user">
 				<ul class="nav navbar-nav navbar-right">
         			<li>
         				<a href="#"><span class="glyphicon glyphicon-user"></span> Krishnaprasad Varma</a>
@@ -35,22 +46,15 @@
       			</ul>
 			</div>
 		</div>
-		<div class="row">
-			<nav class="navbar navbar-default navbar-custom">
-      			<ul class="nav navbar-nav menu">
-        			<li class="active"><a href="#">Manage Venues</a></li>
-        			<li><a href="#">Configurations</a></li>
-      			</ul>
-    		</nav>
-    	</div>
+		<br/>
     	<div class="row sub-header">
     		<div class="col-sm-4">
-    			<h2>Manage Venues</h2>
+    			<h2>My Meetings</h2>
     			<br />
     		</div>
     		<div class="col-sm-8">
-    			<ul class="nav navbar-nav navbar-right">
-        			<li><a href="#" class="btn btn-primary btn-custom" data-toggle="modal" data-target="#addVenue">Add Venue</a></li>							  
+    			<div class="pull-right">
+    				<a href="#" class="btn btn-primary btn-custom" data-toggle="modal" data-target="#addVenue">Filter</a>					  
         			<!-- Add Venue Div -->
 						<div class="modal fade" id="addVenue" role="dialog">
 							<div class="modal-dialog">
@@ -82,503 +86,33 @@
 						</div>
 
 					<!-- End of Add Venue Div -->
-					<li>
-        				<form class="navbar-form" role="search">
-        					<div class="input-group">
-            					<input type="text" class="form-control" placeholder="Search Books.." name="search-term" id="search-term">
-            					<div class="input-group-btn">
-                					<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-            					</div>
-        					</div>
-       					</form>
-        			</li>
-				</ul>
+					<a href="#" class="btn btn-primary btn-custom" data-toggle="modal" data-target="#addVenue">Schedule a Meeting</a>
+    			</div>
     		</div>
 		</div>
 	</div>
 	<div class="container">
-		
 		<div class="row">
-			<div class="col-sm-4 side-bar">
-				<ul class="nav nav-pills nav-stacked">
-					<li class="active">
-						<a href="#">
-							<h4>Mysore</h4>
-		  					<p class="address">Qwinix Technologies Pvt. Ltd. Special Plot No. 5, Horizon, HIEMA Convention Center Road, Hebbal Industrial Estate, Mysore – 570016 </p>
-						</a>
-					</li>
-	        		<li>
-	        			<a href="#">
-	        				<h4>Costa Rica</h4>
-	  						<p class="address">Qwinix Technologies SA Centro Corporativo Plaza Roble, Edificio El Portico, Third floor Escazu, San Jose Email: info-cr@qwinixtech.com</p>
-	        			</a>
-	        		</li>
-	        		<li>
-	        			<a href="#">
-	        				<h4>Dubai</h4>
-	  						<p class="address">Qwinix Technologies Level 14, Boulevard Plaza Tower 1,Sheikh Mohammed Bin Rashid Boulevard, Downtown Dubai, Dubai UAE 334155 Tel: +9714 2780994 Email: info-dubai@qwinixtech.com</p>
-	        			</a>
-	        		</li>
-	        		<li>
-	        			<a href="#">
-	        				<h4>Denver</h4>
-	  						<p class="address">Qwinix Technologies Inc 5350 S. Roslyn Street, Suite # 306, Greenwood Village, CO 80111 Tel: 303-459-4310 Fax: (720) 285-1936 Email: info@qwinixtech.com</p>
-	        			</a>
-	        		</li>
+				<ul class="nav nav-tabs">
+					<span class="glyphicon glyphicon-triangle-left pull-left"></span>
+				    <li class="active"><a href="#">Jan</a></li>
+				    <li><a href="#">Feb</a></li>
+				    <li><a href="#">Mar</a></li>
+				    <li><a href="#">Apr</a></li>
+				    <li><a href="#">May</a></li>
+				    <li><a href="#">Jun</a></li>
+				    <li><a href="#">Jul</a></li>
+				    <li><a href="#">Aug</a></li>
+				    <li><a href="#">Sep</a></li>
+				    <li><a href="#">Oct</a></li>
+				    <li><a href="#">Nov</a></li>
+				    <li><a href="#">Dec</a></li>
+				    <span class="glyphicon glyphicon-triangle-right pull-right"></span> 
 				</ul>
-			</div>
-			<div class="col-sm-8 description">
-				<div class="panel panel-default">
-  					<div class="panel-heading">
-  						<div class="dropdown pull-right">
-							<button type="button" class="btn btn-info btn-lg btn-menu dropdown-toggle" data-toggle="dropdown">
- 							<span class="glyphicon glyphicon-option-horizontal"></span>
- 							</button>
- 							<ul class="dropdown-menu" role="menu">
-								<li><a href="#" data-toggle="modal" data-target="#editVenue"> Edit</a></li>
-  								<li><a href="#">Delete</a></li>
-     							<li><a href="#" data-toggle="modal" data-target="#registerBook">Add a Room</a></li>
-  							</ul>
-						</div>
-  						<h4>Mysore</h4>
-		  				<p><span class="orange-color">
-			  				Qwinix Technologies Pvt. Ltd.<br />
-							Special Plot No. 5, Horizon,<br />
-							HIEMA Convention Center Road,<br />
-							Hebbal Industrial Estate,<br />
-							Mysore – 570016<br />
-							Tel: +91 821 241 3535<br />
-							Email: info-india@qwinixtech.com</span></p>
-  					</div>
-      				<!-- Edit Venue Div -->
-					<div class="modal fade" id="editVenue" role="dialog">
-						<div class="modal-dialog">
-						<!-- Div content-->
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-								<h4 class="modal-title">Edit Venue</h4>
-							</div>
-							<div class="modal-body">
-								<form role="form">
-									<div class="form-group">
-										<input type="text" class="form-control" id="name" placeholder="Name" value="Mysore">
-									</div>
-									<div class="form-group">
-										<textarea class="form-control" rows="5" id="address" placeholder="Address">Qwinix Technologies Pvt. Ltd. Special Plot No. 5, Horizon, HIEMA Convention Center Road, Hebbal Industrial Estate, Mysore – 570016 Tel: +91 821 241 3535 Email: info-india@qwinixtech.com</textarea>
-									</div>
-								</form>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default btn-custom-2 pull-right">Save</button>
-			  					<p class="text-left orange-color"><span class="glyphicon glyphicon-bell"></span><strong>Click on the Save button once you are done.</strong></p>
-			  					<p class="text-left save-align">You can always edit it once it is saved.</p>
-							</div>
-						</div> 
-						<!-- End of Div content-->
-						</div>
-					</div>
-					<!-- End of Edit Venue Div -->			        
-  						
-  					<div class="panel-body">
-  						<div class="pull-right">
-  							<button id="register" class="btn btn-sm btn-primary btn-custom" data-toggle="modal" data-target="#registerBook">Add a Room</a></li>
-  						</div>
-  						<p><strong>Meeting Rooms</strong></p>
-  						<br />
-	        			<!-- Add a Room Div -->
-							<div class="modal fade" id="registerBook" role="dialog">
-								<div class="modal-dialog">
-								  	<!-- Div content-->
-								    <div class="modal-content">
-								        <div class="modal-header">
-								          <button type="button" class="close" data-dismiss="modal">&times;</button>
-								          <h4 class="modal-title">Add a Meeting Room</h4>
-								        </div>
-								        <div class="modal-body">
-								        	<form class="form-horizontal">
-												<div class="form-group">
-													<select class="form-control" id="venue">
-													    <option>Mysore</option>
-													    <option>Costa Rica</option>
-													    <option>Dubai</option>
-													    <option>Denver</option>
-													</select>
-								          		</div>
-								          		<div class="form-group">
-													<label for="name" class="col-sm-4 control-label">Name</label>
-												    <div class="col-sm-8">
-												      <input type="text" class="form-control" id="name" placeholder="Name of the Meeting Room / Hall">
-												    </div>
-								          		</div>
-								          		<div class="form-group">
-													<label for="seat" class="col-sm-4 control-label">Seating Capacity</label>
-												    <div class="col-sm-2">
-												      <input type="number" class="form-control" id="seat">
-												    </div>
-								          		</div>
-								          		<div class="row">
-								          			<div class="radio col-sm-6">
-								          				<label>
-		      												<input type="radio" name="ac">A/C
-														</label>
-								          			</div>
-								          			<div class="radio col-sm-6">
-								          				<label>
-													    	<input type="radio" name="ac">Non A/C
-														</label>
-								          			</div>
-								          		</div>
-								          		<div class="row">
-								          			<div class="radio col-sm-6">
-								          				<label>
-		      												<input type="radio" name="wifi">Strong WiFi
-														</label>
-								          			</div>
-								          			<div class="radio col-sm-6">
-								          				<label>
-													    	<input type="radio" name="wifi">WiFi strenght is weak
-														</label>
-								          			</div>
-								          		</div>
-								          		<div class="row">
-								          			<div class="radio col-sm-6">
-								          				<label>
-		      												<input type="radio" name="mic">Microphone Available
-														</label>
-								          			</div>
-								          			<div class="radio col-sm-6">
-								          				<label>
-													    	<input type="radio" name="mic">Microphone not Available
-														</label>
-								          			</div>
-								          		</div>
-								          		<div class="row">
-								          			<div class="radio col-sm-6">
-								          				<label>
-		      												<input type="radio" name="speaker">Speakers Available
-														</label>
-								          			</div>
-								          			<div class="radio col-sm-6">
-								          				<label>
-													    	<input type="radio" name="speaker">Speakers not Available
-														</label>
-								          			</div>
-								          		</div>
-								          		<div class="row">
-								          			<div class="radio col-sm-6">
-								          				<label>
-		      												<input type="radio" name="tv">TV 
-														</label>
-								          			</div>
-								          			<div class="radio col-sm-6">
-								          				<label>
-													    	<input type="radio" name="tv">No TV 
-														</label>
-								          			</div>
-								          		</div>
-								          		<div class="row">
-								          			<div class="radio col-sm-6">
-								          				<label>
-		      												<input type="radio" name="projector">Projector can be placed 
-														</label>
-								          			</div>
-								          			<div class="radio col-sm-6">
-								          				<label>
-													    	<input type="radio" name="projector">No Space to Project
-														</label>
-								          			</div>
-								          		</div>
-											</form>
-								        </div>
-								        <div class="modal-footer">
-								        	<button type="button" class="btn btn-default btn-custom-2 pull-right">Save</button>
-	  										<p class="text-left orange-color"><span class="glyphicon glyphicon-bell"></span><strong>Click on the Save button once you are done.</strong></p>
-	  										<p class="text-left save-align">You can always edit it once it is saved.</p>
-									    </div>
-								    </div> 
-								<!-- End of Div content-->
-								</div>
-							</div>
-
-						<!-- End of Add a Room Div -->
-
-  						<div class="panel-group">
-	  						<div class="panel panel-default">
-	  							<div class="panel-body">
-	  								<div class="pull-right">
-	  									
-	  										<span class="badge space">4</span>
-	  										<span class="glyphicon glyphicon-refresh space green-color"></span>
-	  										<i class="fa fa-wifi space green-color"></i>
-	  										<i class="fa fa-microphone space"></i>
-	  										<span class="glyphicon glyphicon-volume-up space green-color"></span>
-	  										<i class="fa fa-television space"></i>
-	  										<span class="glyphicon glyphicon-blackboard space"></span>
-	  										<span class="glyphicons glyphicons-tv"></span>
-	  									
-	  								</div>
-	  									<a class="icon-btn" data-toggle="modal" data-target="#editRoom">
-	  										<span class="glyphicon glyphicon-edit"></span>
-	  									</a>
-	  									<a class="icon-btn">
-	  										<span class="glyphicon glyphicon-trash"></span>
-	  									</a>
-	  									<a href="" class="place">Mysore, 2nd floor</a>
-	  							</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	  							<div class="panel-body">
-	  								<div class="pull-right">
-	  									
-	  										<span class="badge space">8</span>
-	  										<span class="glyphicon glyphicon-refresh space green-color"></span>
-	  										<i class="fa fa-wifi space green-color"></i>
-	  										<i class="fa fa-microphone space green-color"></i>
-	  										<span class="glyphicon glyphicon-volume-up space green-color"></span>
-	  										<i class="fa fa-television space green-color"></i>
-	  										<span class="glyphicon glyphicon-blackboard space green-color"></span>
-	  								</div>
-	  									<a class="icon-btn" data-toggle="modal" data-target="#editRoom">
-	  										<span class="glyphicon glyphicon-edit"></span>
-	  									</a>
-	  									<a class="icon-btn">
-	  										<span class="glyphicon glyphicon-trash"></span>
-	  									</a>
-	  									<a href="" class="place">Dubai, 2nd floor</a>
-	  							</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	  							<div class="panel-body">
-	  								<div class="pull-right">
-	  									
-	  										<span class="badge space">6</span>
-	  										<span class="glyphicon glyphicon-refresh space green-color"></span>
-	  										<i class="fa fa-wifi space green-color"></i>
-	  										<i class="fa fa-microphone space green-color"></i>
-	  										<span class="glyphicon glyphicon-volume-up space green-color"></span>
-	  										<i class="fa fa-television space green-color"></i>
-	  										<span class="glyphicon glyphicon-blackboard space"></span>
-	  										<span class="glyphicons glyphicons-tv"></span>
-	  									
-	  								</div>
-	  									<a class="icon-btn" data-toggle="modal" data-target="#editRoom">
-	  										<span class="glyphicon glyphicon-edit"></span>
-	  									</a>
-	  									<a class="icon-btn">
-	  										<span class="glyphicon glyphicon-trash"></span>
-	  									</a>
-	  									<a href="" class="place">Costa Rica, 2nd floor</a>
-	  							</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	  							<div class="panel-body">
-	  								<div class="pull-right">
-	  									
-	  										<span class="badge space">16</span>
-	  										<span class="glyphicon glyphicon-refresh space green-color"></span>
-	  										<i class="fa fa-wifi space green-color"></i>
-	  										<i class="fa fa-microphone space"></i>
-	  										<span class="glyphicon glyphicon-volume-up space"></span>
-	  										<i class="fa fa-television space"></i>
-	  										<span class="glyphicon glyphicon-blackboard space"></span>
-	  										<span class="glyphicons glyphicons-tv green-color"></span>
-	  									
-	  								</div>
-	  									<a class="icon-btn" data-toggle="modal" data-target="#editRoom">
-	  										<span class="glyphicon glyphicon-edit"></span>
-	  									</a>
-	  									<a class="icon-btn">
-	  										<span class="glyphicon glyphicon-trash"></span>
-	  									</a>
-	  									<a href="" class="place">Denver, 2nd floor</a>
-	  							</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	  							<div class="panel-body">
-	  								<div class="pull-right">
-	  									
-	  										<span class="badge space">6</span>
-	  										<span class="glyphicon glyphicon-refresh space green-color"></span>
-	  										<i class="fa fa-wifi space green-color"></i>
-	  										<i class="fa fa-microphone space green-color"></i>
-	  										<span class="glyphicon glyphicon-volume-up space green-color"></span>
-	  										<i class="fa fa-television space green-color"></i>
-	  										<span class="glyphicon glyphicon-blackboard space green-color"></span>
-	  										<span class="glyphicons glyphicons-tv green-color"></span>
-	  									
-	  								</div>
-	  									<a class="icon-btn" data-toggle="modal" data-target="#editRoom">
-	  										<span class="glyphicon glyphicon-edit"></span>
-	  									</a>
-	  									<a class="icon-btn">
-	  										<span class="glyphicon glyphicon-trash"></span>
-	  									</a>
-	  									<a href="" class="place">Meeting Room, 1st Floor</a>
-	  							</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	  							<div class="panel-body">
-	  								<div class="pull-right">
-	  									
-	  										<span class="badge space">8</span>
-	  										<span class="glyphicon glyphicon-refresh space green-color"></span>
-	  										<i class="fa fa-wifi space green-color"></i>
-	  										<i class="fa fa-microphone space"></i>
-	  										<span class="glyphicon glyphicon-volume-up space"></span>
-	  										<i class="fa fa-television space"></i>
-	  										<span class="glyphicon glyphicon-blackboard space"></span>
-	  										<span class="glyphicons glyphicons-tv"></span>
-	  									
-	  								</div>
-	  									<a class="icon-btn" data-toggle="modal" data-target="#editRoom">
-	  										<span class="glyphicon glyphicon-edit"></span>
-	  									</a>
-	  									<a class="icon-btn">
-	  										<span class="glyphicon glyphicon-trash"></span>
-	  									</a>
-	  									<a href="" class="place">Meeting Room, Ground Floor</a>
-	  							</div>
-	  						</div>
-	  						<div class="panel panel-default">
-	  							<div class="panel-body">
-	  								<div class="pull-right">
-	  									
-	  										<span class="badge space">75</span>
-	  										<span class="glyphicon glyphicon-refresh space green-color"></span>
-	  										<i class="fa fa-wifi space green-color"></i>
-	  										<i class="fa fa-microphone space green-color"></i>
-	  										<span class="glyphicon glyphicon-volume-up space green-color"></span>
-	  										<i class="fa fa-television space"></i>
-	  										<span class="glyphicon glyphicon-blackboard space"></span>
-	  										<span class="glyphicons glyphicons-tv green-color"></span>
-	  									
-	  								</div>
-	  									<a class="icon-btn" data-toggle="modal" data-target="#editRoom">
-	  										<span class="glyphicon glyphicon-edit"></span>
-	  									</a>
-	  									<a class="icon-btn">
-	  										<span class="glyphicon glyphicon-trash"></span>
-	  									</a>
-	  									<a href="" class="place">Hall, 2nd floor</a>
-	  							</div>
-	  						</div>
-	  						<!-- Edit Room Div -->
-							<div class="modal fade" id="editRoom" role="dialog">
-								<div class="modal-dialog">
-								  	<!-- Div content-->
-								    <div class="modal-content">
-								        <div class="modal-header">
-								          <button type="button" class="close" data-dismiss="modal">&times;</button>
-								          <h4 class="modal-title">Edit a Meeting Room</h4>
-								        </div>
-								        <div class="modal-body">
-								        	<form class="form-horizontal">
-								        		<h4 class="orange-color">Mysore</h4>
-								          		<div class="form-group">
-													<label for="name" class="col-sm-4 control-label">Name</label>
-												    <div class="col-sm-8">
-												      <input type="text" class="form-control" id="name" placeholder="Name of the Meeting Room / Hall" value="Mysore, 2nd Floor">
-												    </div>
-								          		</div>
-								          		<div class="form-group">
-													<label for="seat" class="col-sm-4 control-label">Seating Capacity</label>
-												    <div class="col-sm-2">
-												      <input type="number" class="form-control" id="seat" value="35">
-												    </div>
-								          		</div>
-								          		<div class="row">
-								          			<div class="radio col-sm-6">
-								          				<label>
-		      												<input type="radio" name="ac" checked="checked">A/C
-														</label>
-								          			</div>
-								          			<div class="radio col-sm-6">
-								          				<label>
-													    	<input type="radio" name="ac">Non A/C
-														</label>
-								          			</div>
-								          		</div>
-								          		<div class="row">
-								          			<div class="radio col-sm-6">
-								          				<label>
-		      												<input type="radio" name="wifi" checked="checked">Strong WiFi
-														</label>
-								          			</div>
-								          			<div class="radio col-sm-6">
-								          				<label>
-													    	<input type="radio" name="wifi">WiFi strenght is weak
-														</label>
-								          			</div>
-								          		</div>
-								          		<div class="row">
-								          			<div class="radio col-sm-6">
-								          				<label>
-		      												<input type="radio" name="mic" checked="checked">Microphone Available
-														</label>
-								          			</div>
-								          			<div class="radio col-sm-6">
-								          				<label>
-													    	<input type="radio" name="mic">Microphone not Available
-														</label>
-								          			</div>
-								          		</div>
-								          		<div class="row">
-								          			<div class="radio col-sm-6">
-								          				<label>
-		      												<input type="radio" name="speaker" checked="checked">Speakers Available
-														</label>
-								          			</div>
-								          			<div class="radio col-sm-6">
-								          				<label>
-													    	<input type="radio" name="speaker">Speakers not Available
-														</label>
-								          			</div>
-								          		</div>
-								          		<div class="row">
-								          			<div class="radio col-sm-6">
-								          				<label>
-		      												<input type="radio" name="tv" checked="checked">TV 
-														</label>
-								          			</div>
-								          			<div class="radio col-sm-6">
-								          				<label>
-													    	<input type="radio" name="tv">No TV 
-														</label>
-								          			</div>
-								          		</div>
-								          		<div class="row">
-								          			<div class="radio col-sm-6">
-								          				<label>
-		      												<input type="radio" name="projector" checked="checked">Projector can be placed 
-														</label>
-								          			</div>
-								          			<div class="radio col-sm-6">
-								          				<label>
-													    	<input type="radio" name="projector">No Space to Project
-														</label>
-								          			</div>
-								          		</div>
-											</form>
-								        </div>
-								        <div class="modal-footer">
-								        	<button type="button" class="btn btn-default btn-custom-2 pull-right">Save</button>
-	  										<p class="text-left orange-color"><span class="glyphicon glyphicon-bell"></span><strong>Click on the Save button once you are done.</strong></p>
-	  										<p class="text-left save-align">You can always edit it once it is saved.</p>
-									    </div>
-								    </div>  
-								<!-- End of Div content-->
-								</div>
-							</div>
-
-						<!-- End of Add a Book Div -->
-	  					</div>
-  					
-  					</div>
-  					
-				</div>
-			</div>
 		</div>
+			
+
+		   
 	</div>
 	<script type="text/javascript">
 		$(".nav a").on("click", function(){
