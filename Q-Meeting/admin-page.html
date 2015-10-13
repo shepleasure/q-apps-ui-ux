@@ -16,6 +16,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Alike' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
  	<div class="container-fluid">
@@ -50,7 +51,7 @@
     		<div class="col-sm-8">
     			<ul class="nav navbar-nav navbar-right">
         			<li><a href="#" class="btn btn-primary btn-custom" data-toggle="modal" data-target="#addVenue">Add Venue</a></li>							  
-        			<!-- Add a Book Div -->
+        			<!-- Add Venue Div -->
 						<div class="modal fade" id="addVenue" role="dialog">
 							<div class="modal-dialog">
 							  	<!-- Div content-->
@@ -80,7 +81,7 @@
 							</div>
 						</div>
 
-					<!-- End of Add a Book Div -->
+					<!-- End of Add Venue Div -->
 					<li>
         				<form class="navbar-form" role="search">
         					<div class="input-group">
@@ -102,30 +103,26 @@
 				<ul class="nav nav-pills nav-stacked">
 					<li class="active">
 						<a href="#">
-							<h4>DevOps for Developers <span class="badge">2</span></h4>
-		  					<p><span class="author">Michael Httermann</span></p>
-		  					<p class="publication">Apress</p>
+							<h4>Mysore</h4>
+		  					<p class="address">Qwinix Technologies Pvt. Ltd. Special Plot No. 5, Horizon, HIEMA Convention Center Road, Hebbal Industrial Estate, Mysore – 570016 </p>
 						</a>
 					</li>
 	        		<li>
 	        			<a href="#">
-	        				<h4>The Docker Book <span class="badge">2</span></h4>
-	  						<p><span class="author">James Turnbull</span></p>
-	  						<p class="publication">James Turnbull</p>
+	        				<h4>Costa Rica</h4>
+	  						<p class="address">Qwinix Technologies SA Centro Corporativo Plaza Roble, Edificio El Portico, Third floor Escazu, San Jose Email: info-cr@qwinixtech.com</p>
 	        			</a>
 	        		</li>
 	        		<li>
 	        			<a href="#">
-	        				<h4>Docker Hands on <span class="badge">5</span></h4>
-	  						<p><span class="author">Navin Sabharwal, Bibin W</span></p>
-	  						<p class="publication">Amazon Digital South Asia Services</p>
+	        				<h4>Dubai</h4>
+	  						<p class="address">Qwinix Technologies Level 14, Boulevard Plaza Tower 1,Sheikh Mohammed Bin Rashid Boulevard, Downtown Dubai, Dubai UAE 334155 Tel: +9714 2780994 Email: info-dubai@qwinixtech.com</p>
 	        			</a>
 	        		</li>
 	        		<li>
 	        			<a href="#">
-	        				<h4>Ansible: Up and Running <span class="badge">2</span></h4>
-	  						<p><span class="author">Lorin Hochstein</span></p>
-	  						<p class="publication">O'Reilly Media</p>
+	        				<h4>Denver</h4>
+	  						<p class="address">Qwinix Technologies Inc 5350 S. Roslyn Street, Suite # 306, Greenwood Village, CO 80111 Tel: 303-459-4310 Fax: (720) 285-1936 Email: info@qwinixtech.com</p>
 	        			</a>
 	        		</li>
 				</ul>
@@ -138,53 +135,37 @@
  							<span class="glyphicon glyphicon-option-horizontal"></span>
  							</button>
  							<ul class="dropdown-menu" role="menu">
-								<li><a href="#" data-toggle="modal" data-target="#editBook"> Edit</a></li>
+								<li><a href="#" data-toggle="modal" data-target="#editVenue"> Edit</a></li>
   								<li><a href="#">Delete</a></li>
-     							<li><a href="#" data-toggle="modal" data-target="#registerBook">Register</a></li>
+     							<li><a href="#" data-toggle="modal" data-target="#registerBook">Add a Room</a></li>
   							</ul>
 						</div>
-  						<h4>DevOps for Developers <span class="badge">2</span></h4>
-		  				<p><span class="author">Michael Httermann</span></p>
-		  				<p>Apress, 2014 Edition</p>
+  						<h4>Mysore</h4>
+		  				<p><span class="orange-color">
+			  				Qwinix Technologies Pvt. Ltd.<br />
+							Special Plot No. 5, Horizon,<br />
+							HIEMA Convention Center Road,<br />
+							Hebbal Industrial Estate,<br />
+							Mysore – 570016<br />
+							Tel: +91 821 241 3535<br />
+							Email: info-india@qwinixtech.com</span></p>
   					</div>
-      				<!-- Edit Book Details Div -->
-					<div class="modal fade" id="editBook" role="dialog">
+      				<!-- Edit Venue Div -->
+					<div class="modal fade" id="editVenue" role="dialog">
 						<div class="modal-dialog">
 						<!-- Div content-->
 						<div class="modal-content">
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
-								<h4 class="modal-title">Edit Book Details</h4>
+								<h4 class="modal-title">Edit Venue</h4>
 							</div>
 							<div class="modal-body">
 								<form role="form">
 									<div class="form-group">
-										<input type="text" class="form-control" id="title" placeholder="Title of the book" value="DevOps for Developers">
+										<input type="text" class="form-control" id="name" placeholder="Name" value="Mysore">
 									</div>
 									<div class="form-group">
-										<input type="text" class="form-control" id="author" placeholder="Author(s)" value="Michael Httermann">
-										</div>
-									<div class="form-group col-sm-6 inline-custom">
-										<input type="text" class="form-control" id="publisher" placeholder="Publisher" value="Apress">
-									</div>
-									<div class="form-group col-sm-6 inline-custom">
-										<input type="text" class="form-control" id="year" placeholder="Year" value="2014">
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" id="isbn" placeholder="ISBN" value="1430245697">
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" id="link1" placeholder="Link 1" value="http://www.amazon.in/1430245697">
-									</div>
-									<div class="form-group has-error has-feedback">
-      									<label class="control-label" for="inputError">Input with error and glyphicon</label>
-										<div class="form-group">
-										    <input type="text" class="form-control" id="inputError" placeholder="Link 2">
-										    <span class="glyphicon glyphicon-remove form-control-feedback"></span>
-										</div>
-									</div>
-									<div class="form-group">
-										<textarea class="form-control" rows="5" id="description" placeholder="Description">DevOps for Developers delivers a practical, thorough introduction to approaches, processes and tools to foster collaboration between software development and operations."</textarea>
+										<textarea class="form-control" rows="5" id="address" placeholder="Address">Qwinix Technologies Pvt. Ltd. Special Plot No. 5, Horizon, HIEMA Convention Center Road, Hebbal Industrial Estate, Mysore – 570016 Tel: +91 821 241 3535 Email: info-india@qwinixtech.com</textarea>
 									</div>
 								</form>
 							</div>
@@ -197,159 +178,413 @@
 						<!-- End of Div content-->
 						</div>
 					</div>
-					<!-- End of Edit Book Details Div -->			        
+					<!-- End of Edit Venue Div -->			        
   						
   					<div class="panel-body">
-  						<p>
-  						DevOps for Developers delivers a practical, thorough introduction to approaches, processes and tools to foster collaboration between software development and operations.
-  						</p>
-  						<br />
-  						<p><strong>Details</strong></p>
-  						<hr>
-  						<table class="table table-striped">
-      						<tr>
-						        <td>Title</td>
-						        <td>DevOps for Developers</td>
-						    </tr>
-						    <tr>
-						        <td>Author</td>
-						        <td>Michael Httermann</td>
-						    </tr>
-						    <tr>
-						        <td>Publisher</td>
-						        <td>Apress</td>
-						    </tr>
-						    <tr>
-						        <td>Edition/Year</td>
-						        <td>2014</td>
-						    </tr>
-						    <tr>
-						        <td>ISBN</td>
-						        <td>1430245697</td>
-						    </tr>
-						    <tr>
-						        <td>No of Books</td>
-						        <td>2</td>
-						    </tr>
-						    <tr>
-						        <td>Link 1</td>
-						        <td><a href="http://www.amazon.in/1430245697">http://www.amazon.in/1430245697</a></td>
-						    </tr>
-						    <tr>
-						        <td>Link 2</td>
-						        <td><a href="http://www.amazon.in/916312312">http://www.amazon.in/916312312</a></td>
-						    </tr>
-						    <tr>
-						        <td>Created At</td>
-						        <td>1st August 2014</td>
-						    </tr>
-						    <tr>
-						        <td>Updated At</td>
-						        <td>1st August 2014</td>
-						    </tr>
-  						</table>
-  					</div>
-  					<div class="panel-footer">
   						<div class="pull-right">
-  							<button id="register" class="btn btn-sm btn-primary btn-custom" data-toggle="modal" data-target="#registerBook">Register a Book</a></li>
+  							<button id="register" class="btn btn-sm btn-primary btn-custom" data-toggle="modal" data-target="#registerBook">Add a Room</a></li>
   						</div>
-  						<p><strong>Registered Books (2)</strong></p>
+  						<p><strong>Meeting Rooms</strong></p>
   						<br />
-	        			<!-- Register a Book Div -->
+	        			<!-- Add a Room Div -->
 							<div class="modal fade" id="registerBook" role="dialog">
 								<div class="modal-dialog">
 								  	<!-- Div content-->
 								    <div class="modal-content">
 								        <div class="modal-header">
 								          <button type="button" class="close" data-dismiss="modal">&times;</button>
-								          <h4 class="modal-title">Register a Book</h4>
+								          <h4 class="modal-title">Add a Meeting Room</h4>
 								        </div>
 								        <div class="modal-body">
-								        	<div class="alert alert-success">
-  												<p><span class="glyphicon glyphicon-info-sign"></span><strong>Add the serial number (some unique number to identify the book)</strong></p>
-  												<p class="save-align">You have added the book, now you need to register all the books you have purchased. for e.g: If you have purchased 10 copies of 'Extreme Programming' by Kent Beck, Register all the 10 books here so that you can track who has taken which book.</p>
-											</div>
-								          	<form role="form">
-											  <div class="form-group">
-											    <input type="text" class="form-control" id="serial-no" placeholder="Sl No">
-											  </div>
-											  <div class="form-group">
-											    <input type="text" class="form-control" id="purchase-date" placeholder="Purchase Date">
-											  </div>
+								        	<form class="form-horizontal">
+												<div class="form-group">
+													<select class="form-control" id="venue">
+													    <option>Mysore</option>
+													    <option>Costa Rica</option>
+													    <option>Dubai</option>
+													    <option>Denver</option>
+													</select>
+								          		</div>
+								          		<div class="form-group">
+													<label for="name" class="col-sm-4 control-label">Name</label>
+												    <div class="col-sm-8">
+												      <input type="text" class="form-control" id="name" placeholder="Name of the Meeting Room / Hall">
+												    </div>
+								          		</div>
+								          		<div class="form-group">
+													<label for="seat" class="col-sm-4 control-label">Seating Capacity</label>
+												    <div class="col-sm-2">
+												      <input type="number" class="form-control" id="seat">
+												    </div>
+								          		</div>
+								          		<div class="row">
+								          			<div class="radio col-sm-6">
+								          				<label>
+		      												<input type="radio" name="ac">A/C
+														</label>
+								          			</div>
+								          			<div class="radio col-sm-6">
+								          				<label>
+													    	<input type="radio" name="ac">Non A/C
+														</label>
+								          			</div>
+								          		</div>
+								          		<div class="row">
+								          			<div class="radio col-sm-6">
+								          				<label>
+		      												<input type="radio" name="wifi">Strong WiFi
+														</label>
+								          			</div>
+								          			<div class="radio col-sm-6">
+								          				<label>
+													    	<input type="radio" name="wifi">WiFi strenght is weak
+														</label>
+								          			</div>
+								          		</div>
+								          		<div class="row">
+								          			<div class="radio col-sm-6">
+								          				<label>
+		      												<input type="radio" name="mic">Microphone Available
+														</label>
+								          			</div>
+								          			<div class="radio col-sm-6">
+								          				<label>
+													    	<input type="radio" name="mic">Microphone not Available
+														</label>
+								          			</div>
+								          		</div>
+								          		<div class="row">
+								          			<div class="radio col-sm-6">
+								          				<label>
+		      												<input type="radio" name="speaker">Speakers Available
+														</label>
+								          			</div>
+								          			<div class="radio col-sm-6">
+								          				<label>
+													    	<input type="radio" name="speaker">Speakers not Available
+														</label>
+								          			</div>
+								          		</div>
+								          		<div class="row">
+								          			<div class="radio col-sm-6">
+								          				<label>
+		      												<input type="radio" name="tv">TV 
+														</label>
+								          			</div>
+								          			<div class="radio col-sm-6">
+								          				<label>
+													    	<input type="radio" name="tv">No TV 
+														</label>
+								          			</div>
+								          		</div>
+								          		<div class="row">
+								          			<div class="radio col-sm-6">
+								          				<label>
+		      												<input type="radio" name="projector">Projector can be placed 
+														</label>
+								          			</div>
+								          			<div class="radio col-sm-6">
+								          				<label>
+													    	<input type="radio" name="projector">No Space to Project
+														</label>
+								          			</div>
+								          		</div>
 											</form>
 								        </div>
 								        <div class="modal-footer">
-								        	<button type="button" class="btn btn-default btn-custom-2 pull-right">Register</button>
-								        </div>
+								        	<button type="button" class="btn btn-default btn-custom-2 pull-right">Save</button>
+	  										<p class="text-left orange-color"><span class="glyphicon glyphicon-bell"></span><strong>Click on the Save button once you are done.</strong></p>
+	  										<p class="text-left save-align">You can always edit it once it is saved.</p>
+									    </div>
 								    </div> 
 								<!-- End of Div content-->
 								</div>
 							</div>
 
-						<!-- End of Register a Book Div -->
+						<!-- End of Add a Room Div -->
 
   						<div class="panel-group">
 	  						<div class="panel panel-default">
 	  							<div class="panel-body">
 	  								<div class="pull-right">
-	  									<button type="button" class="btn btn-xs btn-default" disabled="disabled">Update as Returned</button>
-	  									<a class="icon-btn" data-toggle="modal" data-target="#editRegister">
+	  									
+	  										<span class="badge space">4</span>
+	  										<span class="glyphicon glyphicon-refresh space green-color"></span>
+	  										<i class="fa fa-wifi space green-color"></i>
+	  										<i class="fa fa-microphone space"></i>
+	  										<span class="glyphicon glyphicon-volume-up space green-color"></span>
+	  										<i class="fa fa-television space"></i>
+	  										<span class="glyphicon glyphicon-blackboard space"></span>
+	  										<span class="glyphicons glyphicons-tv"></span>
+	  									
+	  								</div>
+	  									<a class="icon-btn" data-toggle="modal" data-target="#editRoom">
 	  										<span class="glyphicon glyphicon-edit"></span>
 	  									</a>
 	  									<a class="icon-btn">
 	  										<span class="glyphicon glyphicon-trash"></span>
 	  									</a>
-	  								</div>
-	  								<p><a class="publication" href="#">123891723</a></p>
+	  									<a href="" class="place">Mysore, 2nd floor</a>
 	  							</div>
 	  						</div>
-	  						<!-- Add a Book Div -->
-							<div class="modal fade" id="editRegister" role="dialog">
+	  						<div class="panel panel-default">
+	  							<div class="panel-body">
+	  								<div class="pull-right">
+	  									
+	  										<span class="badge space">8</span>
+	  										<span class="glyphicon glyphicon-refresh space green-color"></span>
+	  										<i class="fa fa-wifi space green-color"></i>
+	  										<i class="fa fa-microphone space green-color"></i>
+	  										<span class="glyphicon glyphicon-volume-up space green-color"></span>
+	  										<i class="fa fa-television space green-color"></i>
+	  										<span class="glyphicon glyphicon-blackboard space green-color"></span>
+	  								</div>
+	  									<a class="icon-btn" data-toggle="modal" data-target="#editRoom">
+	  										<span class="glyphicon glyphicon-edit"></span>
+	  									</a>
+	  									<a class="icon-btn">
+	  										<span class="glyphicon glyphicon-trash"></span>
+	  									</a>
+	  									<a href="" class="place">Dubai, 2nd floor</a>
+	  							</div>
+	  						</div>
+	  						<div class="panel panel-default">
+	  							<div class="panel-body">
+	  								<div class="pull-right">
+	  									
+	  										<span class="badge space">6</span>
+	  										<span class="glyphicon glyphicon-refresh space green-color"></span>
+	  										<i class="fa fa-wifi space green-color"></i>
+	  										<i class="fa fa-microphone space green-color"></i>
+	  										<span class="glyphicon glyphicon-volume-up space green-color"></span>
+	  										<i class="fa fa-television space green-color"></i>
+	  										<span class="glyphicon glyphicon-blackboard space"></span>
+	  										<span class="glyphicons glyphicons-tv"></span>
+	  									
+	  								</div>
+	  									<a class="icon-btn" data-toggle="modal" data-target="#editRoom">
+	  										<span class="glyphicon glyphicon-edit"></span>
+	  									</a>
+	  									<a class="icon-btn">
+	  										<span class="glyphicon glyphicon-trash"></span>
+	  									</a>
+	  									<a href="" class="place">Costa Rica, 2nd floor</a>
+	  							</div>
+	  						</div>
+	  						<div class="panel panel-default">
+	  							<div class="panel-body">
+	  								<div class="pull-right">
+	  									
+	  										<span class="badge space">16</span>
+	  										<span class="glyphicon glyphicon-refresh space green-color"></span>
+	  										<i class="fa fa-wifi space green-color"></i>
+	  										<i class="fa fa-microphone space"></i>
+	  										<span class="glyphicon glyphicon-volume-up space"></span>
+	  										<i class="fa fa-television space"></i>
+	  										<span class="glyphicon glyphicon-blackboard space"></span>
+	  										<span class="glyphicons glyphicons-tv green-color"></span>
+	  									
+	  								</div>
+	  									<a class="icon-btn" data-toggle="modal" data-target="#editRoom">
+	  										<span class="glyphicon glyphicon-edit"></span>
+	  									</a>
+	  									<a class="icon-btn">
+	  										<span class="glyphicon glyphicon-trash"></span>
+	  									</a>
+	  									<a href="" class="place">Denver, 2nd floor</a>
+	  							</div>
+	  						</div>
+	  						<div class="panel panel-default">
+	  							<div class="panel-body">
+	  								<div class="pull-right">
+	  									
+	  										<span class="badge space">6</span>
+	  										<span class="glyphicon glyphicon-refresh space green-color"></span>
+	  										<i class="fa fa-wifi space green-color"></i>
+	  										<i class="fa fa-microphone space green-color"></i>
+	  										<span class="glyphicon glyphicon-volume-up space green-color"></span>
+	  										<i class="fa fa-television space green-color"></i>
+	  										<span class="glyphicon glyphicon-blackboard space green-color"></span>
+	  										<span class="glyphicons glyphicons-tv green-color"></span>
+	  									
+	  								</div>
+	  									<a class="icon-btn" data-toggle="modal" data-target="#editRoom">
+	  										<span class="glyphicon glyphicon-edit"></span>
+	  									</a>
+	  									<a class="icon-btn">
+	  										<span class="glyphicon glyphicon-trash"></span>
+	  									</a>
+	  									<a href="" class="place">Meeting Room, 1st Floor</a>
+	  							</div>
+	  						</div>
+	  						<div class="panel panel-default">
+	  							<div class="panel-body">
+	  								<div class="pull-right">
+	  									
+	  										<span class="badge space">8</span>
+	  										<span class="glyphicon glyphicon-refresh space green-color"></span>
+	  										<i class="fa fa-wifi space green-color"></i>
+	  										<i class="fa fa-microphone space"></i>
+	  										<span class="glyphicon glyphicon-volume-up space"></span>
+	  										<i class="fa fa-television space"></i>
+	  										<span class="glyphicon glyphicon-blackboard space"></span>
+	  										<span class="glyphicons glyphicons-tv"></span>
+	  									
+	  								</div>
+	  									<a class="icon-btn" data-toggle="modal" data-target="#editRoom">
+	  										<span class="glyphicon glyphicon-edit"></span>
+	  									</a>
+	  									<a class="icon-btn">
+	  										<span class="glyphicon glyphicon-trash"></span>
+	  									</a>
+	  									<a href="" class="place">Meeting Room, Ground Floor</a>
+	  							</div>
+	  						</div>
+	  						<div class="panel panel-default">
+	  							<div class="panel-body">
+	  								<div class="pull-right">
+	  									
+	  										<span class="badge space">75</span>
+	  										<span class="glyphicon glyphicon-refresh space green-color"></span>
+	  										<i class="fa fa-wifi space green-color"></i>
+	  										<i class="fa fa-microphone space green-color"></i>
+	  										<span class="glyphicon glyphicon-volume-up space green-color"></span>
+	  										<i class="fa fa-television space"></i>
+	  										<span class="glyphicon glyphicon-blackboard space"></span>
+	  										<span class="glyphicons glyphicons-tv green-color"></span>
+	  									
+	  								</div>
+	  									<a class="icon-btn" data-toggle="modal" data-target="#editRoom">
+	  										<span class="glyphicon glyphicon-edit"></span>
+	  									</a>
+	  									<a class="icon-btn">
+	  										<span class="glyphicon glyphicon-trash"></span>
+	  									</a>
+	  									<a href="" class="place">Hall, 2nd floor</a>
+	  							</div>
+	  						</div>
+	  						<!-- Edit Room Div -->
+							<div class="modal fade" id="editRoom" role="dialog">
 								<div class="modal-dialog">
 								  	<!-- Div content-->
 								    <div class="modal-content">
 								        <div class="modal-header">
 								          <button type="button" class="close" data-dismiss="modal">&times;</button>
-								          <h4 class="modal-title">Edit Registration Details</h4>
+								          <h4 class="modal-title">Edit a Meeting Room</h4>
 								        </div>
 								        <div class="modal-body">
-								          	<form role="form">
-											  <div class="form-group">
-											    <input type="text" class="form-control" id="serial-no" placeholder="Sl No" value="18278921763">
-											  </div>
-											  <div class="form-group">
-											    <input type="text" class="form-control" id="purchase-date" placeholder="Purchase Date" value="11/12/2014">
-											  </div>
+								        	<form class="form-horizontal">
+								        		<h4 class="orange-color">Mysore</h4>
+								          		<div class="form-group">
+													<label for="name" class="col-sm-4 control-label">Name</label>
+												    <div class="col-sm-8">
+												      <input type="text" class="form-control" id="name" placeholder="Name of the Meeting Room / Hall" value="Mysore, 2nd Floor">
+												    </div>
+								          		</div>
+								          		<div class="form-group">
+													<label for="seat" class="col-sm-4 control-label">Seating Capacity</label>
+												    <div class="col-sm-2">
+												      <input type="number" class="form-control" id="seat" value="35">
+												    </div>
+								          		</div>
+								          		<div class="row">
+								          			<div class="radio col-sm-6">
+								          				<label>
+		      												<input type="radio" name="ac" checked="checked">A/C
+														</label>
+								          			</div>
+								          			<div class="radio col-sm-6">
+								          				<label>
+													    	<input type="radio" name="ac">Non A/C
+														</label>
+								          			</div>
+								          		</div>
+								          		<div class="row">
+								          			<div class="radio col-sm-6">
+								          				<label>
+		      												<input type="radio" name="wifi" checked="checked">Strong WiFi
+														</label>
+								          			</div>
+								          			<div class="radio col-sm-6">
+								          				<label>
+													    	<input type="radio" name="wifi">WiFi strenght is weak
+														</label>
+								          			</div>
+								          		</div>
+								          		<div class="row">
+								          			<div class="radio col-sm-6">
+								          				<label>
+		      												<input type="radio" name="mic" checked="checked">Microphone Available
+														</label>
+								          			</div>
+								          			<div class="radio col-sm-6">
+								          				<label>
+													    	<input type="radio" name="mic">Microphone not Available
+														</label>
+								          			</div>
+								          		</div>
+								          		<div class="row">
+								          			<div class="radio col-sm-6">
+								          				<label>
+		      												<input type="radio" name="speaker" checked="checked">Speakers Available
+														</label>
+								          			</div>
+								          			<div class="radio col-sm-6">
+								          				<label>
+													    	<input type="radio" name="speaker">Speakers not Available
+														</label>
+								          			</div>
+								          		</div>
+								          		<div class="row">
+								          			<div class="radio col-sm-6">
+								          				<label>
+		      												<input type="radio" name="tv" checked="checked">TV 
+														</label>
+								          			</div>
+								          			<div class="radio col-sm-6">
+								          				<label>
+													    	<input type="radio" name="tv">No TV 
+														</label>
+								          			</div>
+								          		</div>
+								          		<div class="row">
+								          			<div class="radio col-sm-6">
+								          				<label>
+		      												<input type="radio" name="projector" checked="checked">Projector can be placed 
+														</label>
+								          			</div>
+								          			<div class="radio col-sm-6">
+								          				<label>
+													    	<input type="radio" name="projector">No Space to Project
+														</label>
+								          			</div>
+								          		</div>
 											</form>
 								        </div>
 								        <div class="modal-footer">
-								        	<button type="button" class="btn btn-default btn-custom-2 pull-right">Register</button>
-								        </div>
-								    </div> 
+								        	<button type="button" class="btn btn-default btn-custom-2 pull-right">Save</button>
+	  										<p class="text-left orange-color"><span class="glyphicon glyphicon-bell"></span><strong>Click on the Save button once you are done.</strong></p>
+	  										<p class="text-left save-align">You can always edit it once it is saved.</p>
+									    </div>
+								    </div>  
 								<!-- End of Div content-->
 								</div>
 							</div>
 
 						<!-- End of Add a Book Div -->
-	  						<div class="panel panel-default active-book">
-	  							<div class="panel-body">
-	  								<div class="pull-right">
-	  									<button type="button" class="btn btn-xs btn-default btn-custom-2">Update as Borrowed</button>
-	  									<a class="icon-btn" data-toggle="modal" data-target="#editRegister">
-	  										<span class="glyphicon glyphicon-edit"></span>
-	  									</a>
-	  									<a class="icon-btn">
-	  										<span class="glyphicon glyphicon-trash"></span>
-	  									</a>
-	  								</div>
-	  								<p><a class="green-color" href="#">123891723</a></p>
-	  							</div>
-	  						</div>
 	  					</div>
+  					
   					</div>
+  					
 				</div>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		$(".nav a").on("click", function(){
+		$(".nav").find(".active").removeClass("active");
+		$(this).parent().addClass("active");
+	});
+	</script>
 </body>
 </html>
