@@ -32,7 +32,7 @@ body {
   border-color: #22C976 !important;
 }
 .glyphicon-edit, .glyphicon-trash {
-  color: #22C976;
+  color: #4D4D4D;
 }
 .glyphicon-edit, .glyphicon-trash, .glyphicon-bell, .glyphicon-info-sign {
   padding: 0px 3px 0px 3px;
@@ -65,7 +65,7 @@ body {
   margin-top: 0px;
 }
 .btn-menu {
-  border: 2px solid #4D4D4D !important;
+  border-color: #4D4D4D !important;
   background-color: white !important;
   color: #4D4D4D !important;
   padding: 5px 5px 0px 5px !important;
@@ -121,8 +121,10 @@ p, a{
 .sub-header h2 {
   color: #fff;
   font-family: 'Roboto', sans-serif;
+  padding-bottom: 5px;
+  margin-top: 10px !important;
 }
-.active-book .glyphicon, .active-book p, .green-color{
+.active-book p, .green-color{
   color: #22C976;
 }
 .inline-custom {
@@ -144,10 +146,27 @@ p, a{
 .danger {
   color: #d9534f !important;
 }
-.publication {
-  color: #c8c8c8;
+.address {
+  color: #6D6E70;
 }
+.address:focus {
+  color: #fff;
+} 
 .sidebar{
     background-color: green;
     height:auto!important;
+}
+.space {
+  margin-right: 5px;
+}
+.place {
+  color: #22C976;
+  margin-left: 20px;
+}
+.place:hover {
+  text-decoration: none !important;
+  color: #4D4D4D !important;
+}
+.control-label {
+  text-align: left !important;
 }

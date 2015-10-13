@@ -226,7 +226,6 @@
   						</p>
   						<br />
   						<p><strong>Details</strong></p>
-  						<hr>
   						<table class="table table-striped">
       						<tr>
 						        <td>Title</td>
@@ -372,5 +371,11 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		$(".nav a").on("click", function(){
+		$(".nav").find(".active").removeClass("active");
+		$(this).parent().addClass("active");
+	});
+	</script>
 </body>
 </html>
