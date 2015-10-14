@@ -205,18 +205,18 @@ p, a{
 .meeting i {
   margin-right: 5px;
 }
-.nav-tabs>li.active>a, .nav-tabs>li.hover>a, .nav-pills>li.active>a{
+.nav-tabs>li.active>a, .nav-tabs>li.hover>a, .my-pills>li.active>a{
   background-color: #22C976 !important;
   color: #fff !important;
 }
-.nav-pills>li.active>a h5 {
+.my-pills>li.active>a h5 {
   color: #fff;
 }
 .nav-tabs {
   margin-bottom: 10px !important;
   border-bottom: none !important;
 }
-.nav-pills {
+.my-pills {
   margin-left: 20px;
   margin-bottom: 10px !important;
 }
