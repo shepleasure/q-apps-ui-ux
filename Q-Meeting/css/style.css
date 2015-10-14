@@ -170,3 +170,56 @@ p, a{
 .control-label {
   text-align: left !important;
 }
+.glyphicon-triangle-left, .glyphicon-triangle-right {
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.glyphicon-triangle-left {
+  margin-right: 5px;
+}
+.nav-tabs>li>.month {
+  background-color: #fff !important;
+  color: #4D4D4D !important;
+  width: 92.5px;
+}
+.nav-tabs>li>.date {
+  background-color: #fff !important;
+  color: #4D4D4D !important;
+  width: 225px;
+}
+.nav-tabs>li>.day {
+  background-color: #fff !important;
+  color: #4D4D4D !important;
+  width: 160px;
+}
+.nav-pills>li>.meeting {
+  background-color: #fff !important;
+  color: #4D4D4D !important;
+  width: 160px;
+  float: left;
+}
+.meeting p {
+  font-size: 12px;
+}
+.meeting i {
+  margin-right: 5px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.hover>a, .nav-pills>li.active>a{
+  background-color: #22C976 !important;
+  color: #fff !important;
+}
+.nav-pills>li.active>a h5 {
+  color: #fff;
+}
+.nav-tabs {
+  margin-bottom: 10px !important;
+  border-bottom: none !important;
+}
+.nav-pills {
+  margin-left: 20px;
+  margin-bottom: 10px !important;
+}
+.no-meet {
+  visibility: hidden !important;
+}
