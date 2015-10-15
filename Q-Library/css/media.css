@@ -1,0 +1,43 @@
+ /* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+.img-header {	
+	margin: auto;
+}
+.user li a {
+	display: inline !important;
+	float: left;
+}
+.sub-header h2 {
+	text-align: center;
+}
+.user-button a , .input-group {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.search {
+	margin: auto;
+}
+.btn-custom  {
+	width: 288px;
+}
+.user-button>li>a {
+	margin: auto;
+}
+
+}/* End of Custom, iPhone Retina */ 
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 481px) and (max-width : 768px) {
+
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 769px) and (max-width : 992px) {
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 993px) and (max-width : 1200px) {
+
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1201px) {
+
+}

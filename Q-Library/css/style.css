@@ -1,3 +1,7 @@
+html, body { 
+  width:100%;
+  overflow-x: hidden;
+}
 body {
   background-color: #6D6E70 !important;  
   font-style: 'Roboto', sans-serif !important; 
@@ -42,7 +46,7 @@ body {
 }
 .header {
   background-color: #fff;
-  padding: 10px;
+  padding:10px;
 }
 .navbar-custom {
   background-color: #4D4D4D !important;
@@ -152,4 +156,11 @@ p, a{
 .sidebar{
     background-color: green;
     height:auto!important;
+}
+.navbar-brand {
+  color: #fff !important; 
+  font-size: 16px !important;
+}
+.search {
+  width: 312px;
 }
