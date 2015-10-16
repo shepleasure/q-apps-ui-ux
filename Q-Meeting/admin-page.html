@@ -12,7 +12,6 @@
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<!-- End of Bootstrap CDN -->
 	<!-- Chosen Plugin -->
-	<link rel="stylesheet" href="chosen-plugin/docsupport/prism.css">
   	<link rel="stylesheet" href="chosen-plugin/chosen.css">
   	<!-- End of Chosen Plugin -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -31,10 +30,10 @@
 			</div>
 			<div class="col-sm-6 col-sm-offset-2 text-right user">
 				<ul class="nav navbar-nav navbar-right">
-        			<li>
+        			<li class="hidden-xs">
         				<a href="#"><span class="glyphicon glyphicon-user"></span> Krishnaprasad Varma</a>
         			</li>
-        			<li>
+        			<li class="hidden-xs">
         				<a href="#"><span class="glyphicon glyphicon-log-out" id="sign-out"></span> Sign out</a>
         			</li>
       			</ul>
@@ -48,12 +47,15 @@
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>                        
 				    </button>
-      				<a class="navbar-brand" href="#">Home</a>
+      				<a class="navbar-brand visible-xs" href="#"><span class="glyphicon glyphicon-user"></span> Krishnaprasad Varma</a>
     			</div>
     			<div class="collapse navbar-collapse" id="myNavbar">
 	      			<ul class="nav navbar-nav menu">
 	        			<li class="active"><a href="#">Manage Venues</a></li>
 	        			<li><a href="#">Configurations</a></li>
+	        			<li class="visible-xs">
+        				<a href="#"><span class="glyphicon glyphicon-log-out" id="sign-out"></span> Sign out</a>
+        				</li>
 	      			</ul>
       			</div>
     		</nav>
@@ -99,12 +101,12 @@
 					<!-- End of Add Venue Div -->
 					<li class="search">
         				<div class="form-group">
-  							<select class="form-control chosen-select" data-placeholder="Search Books...">
+  							<select class="form-control chosen-select" data-placeholder="Search Venues...">
 								<option value=""></option>
-					            <option value="DevOps for Developers">DevOps for Developers</option>
-					            <option value="The Docker Book">The Docker Book</option>
-					            <option value="Docker Hands on">Docker Hands on</option>
-					            <option value="Ansible: Up and Running">Ansible: Up and Running</option>
+					            <option value="DevOps for Developers">Mysore</option>
+					            <option value="The Docker Book">Costa Rica</option>
+					            <option value="Docker Hands on">Dubai</option>
+					            <option value="Ansible: Up and Running">Denver</option>
 				  			</select>
 						</div>
         			</li>
@@ -234,72 +236,72 @@
 												    </div>
 								          		</div>
 								          		<div class="row">
-								          			<div class="radio col-sm-6">
+								          			<div class="radio col-xs-6">
 								          				<label>
 		      												<input type="radio" name="ac">A/C
 														</label>
 								          			</div>
-								          			<div class="radio col-sm-6">
+								          			<div class="radio col-xs-6">
 								          				<label>
 													    	<input type="radio" name="ac">Non A/C
 														</label>
 								          			</div>
 								          		</div>
 								          		<div class="row">
-								          			<div class="radio col-sm-6">
+								          			<div class="radio col-xs-6">
 								          				<label>
 		      												<input type="radio" name="wifi">Strong WiFi
 														</label>
 								          			</div>
-								          			<div class="radio col-sm-6">
+								          			<div class="radio col-xs-6">
 								          				<label>
 													    	<input type="radio" name="wifi">WiFi strenght is weak
 														</label>
 								          			</div>
 								          		</div>
 								          		<div class="row">
-								          			<div class="radio col-sm-6">
+								          			<div class="radio col-xs-6">
 								          				<label>
 		      												<input type="radio" name="mic">Microphone Available
 														</label>
 								          			</div>
-								          			<div class="radio col-sm-6">
+								          			<div class="radio col-xs-6">
 								          				<label>
 													    	<input type="radio" name="mic">Microphone not Available
 														</label>
 								          			</div>
 								          		</div>
 								          		<div class="row">
-								          			<div class="radio col-sm-6">
+								          			<div class="radio col-xs-6">
 								          				<label>
 		      												<input type="radio" name="speaker">Speakers Available
 														</label>
 								          			</div>
-								          			<div class="radio col-sm-6">
+								          			<div class="radio col-xs-6">
 								          				<label>
 													    	<input type="radio" name="speaker">Speakers not Available
 														</label>
 								          			</div>
 								          		</div>
 								          		<div class="row">
-								          			<div class="radio col-sm-6">
+								          			<div class="radio col-xs-6">
 								          				<label>
 		      												<input type="radio" name="tv">TV 
 														</label>
 								          			</div>
-								          			<div class="radio col-sm-6">
+								          			<div class="radio col-xs-6">
 								          				<label>
 													    	<input type="radio" name="tv">No TV 
 														</label>
 								          			</div>
 								          		</div>
 								          		<div class="row">
-								          			<div class="radio col-sm-6">
+								          			<div class="radio col-xs-6">
 								          				<label>
 		      												<input type="radio" name="projector">Projector can be placed 
 														</label>
 								          			</div>
-								          			<div class="radio col-sm-6">
+								          			<div class="radio col-xs-6">
 								          				<label>
 													    	<input type="radio" name="projector">No Space to Project
 														</label>
