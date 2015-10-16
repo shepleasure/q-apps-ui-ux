@@ -58,11 +58,98 @@
     		<div class="col-sm-8">
     			<div class="pull-right">
     				<a href="#" class="btn btn-primary btn-custom" data-toggle="modal" data-target="#">Filter</a>					  
-					<a href="#" class="btn btn-primary btn-custom" data-toggle="modal" data-target="#">Schedule a Meeting</a>
+					<a href="#" class="btn btn-primary btn-custom" data-toggle="modal" data-target="#schedule">Schedule a Meeting</a>
     			</div>
     		</div>
 		</div>
 	</div>
+	<!-- Schedule Meeting Div -->
+						<div class="modal fade" id="schedule" role="dialog">
+							<div class="modal-dialog">
+							  	<!-- Div content-->
+							   <div class="modal-content">
+							        	<div class="modal-header">
+							        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+								      	<div class="modal-title">
+								        	Schedule a Meeting
+							        		</div>
+							        	</div>
+							        	<div class="modal-body">
+							        		<div class="row">
+							        			<div class="col-sm-7 temp">
+								        			<i class="glyphicon glyphicon-time glyph-space"></i>
+													<input class="custom-input" type="time" name="usr_time">
+													<input class="custom-input" type="time" name="usr_time">
+													<i class="glyphicon glyphicon-calendar glyph-space"></i>
+													<input class="custom-input" type="date" name="bday">
+												</div>
+												<div class="col-sm-3"> 
+													<div class="form-group">
+													  	<select class="form-control chosen-select" data-placeholder="Search Venues...">
+															<option value=""></option>
+															<option value="DevOps for Developers" selected="selected">Denver</option>
+															<option value="The Docker Book">Dubai</option>
+															<option value="Docker Hands on">Costa Rica</option>
+															<option value="Ansible: Up and Running">Mysore</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-sm-2 temp">
+													<p><i class="glyphicon glyphicon-ok"></i> Available</p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="form-group">
+														<textarea class="form-control" rows="15" id="" placeholder="Add Comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. 
+														</textarea>
+											  		</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="pull-right">
+				  										<span class="badge space">75</span>
+				  										<span class="glyphicon glyphicon-refresh space green-color"></span>
+				  										<i class="fa fa-wifi space green-color"></i>
+				  										<i class="fa fa-microphone space green-color"></i>
+				  										<span class="glyphicon glyphicon-volume-up space green-color"></span>
+				  										<i class="fa fa-television space"></i>
+				  										<span class="glyphicon glyphicon-blackboard space"></span>
+				  										<span class="glyphicons glyphicons-tv green-color"></span>
+				  									</div>
+													<p><strong>Denver, Mysore</strong></p>
+													<hr />
+													<div class="table-responsive">
+								  						<table class="table table-striped">
+								      					<tr>
+														        <td>9:30 AM - 9:45 AM</td>
+														        <td>Dish Dash Meeting</td>
+														    </tr>
+														    <tr>
+														        <td>10:30 AM - 11:00 AM</td>
+														        <td>HR Meeting</td>
+														    </tr>
+														    <tr>
+														        <td>2:30 PM - 3:30 PM</td>
+														        <td>Private Meeting (Mahesh)</td>
+														    </tr>
+														    <tr>
+														        <td>4:30 PM - 5:00 PM</td>
+														        <td>Private Meeting (Krishnan)</td>
+														    </tr>
+														</table>
+													</div>
+																			
+												</div>
+</div>
+</div>
+
+								        	
+							   </div> 
+							<!-- End of Div content-->
+							</div>
+						</div>
+
+					<!-- End of Schedule Meeting Div -->
 	<div class="container">
 		<div class="row text-center">
 				<ul class="nav nav-tabs">
