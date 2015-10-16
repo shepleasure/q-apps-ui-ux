@@ -10,6 +10,9 @@
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<!-- End of Bootstrap CDN -->
+	<!-- Chosen Plugin -->
+  	<link rel="stylesheet" href="chosen-plugin/chosen.css">
+  	<!-- End of Chosen Plugin -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 	<script src="http://malsup.github.com/jquery.form.js"></script>
@@ -107,7 +110,7 @@
 		<div class="row">
 			<ul class="nav nav-pills my-pills">
 				<li>
-					<a href="#" class="meeting">
+					<a href="#" class="meeting" data-toggle="modal" data-target="#details">
 						<h5 class="green-color"><strong>Dish Dash Standup</strong></h5>
 		  				<p><i class="glyphicon glyphicon-time"></i>9:30 AM - 9:45 AM</p>
 		  				<p class="orange-color class="orange-color" "><i class="glyphicon glyphicon-map-marker"></i>Denver, Mysore</p>
@@ -316,7 +319,228 @@
 				</li>	
 			</ul>
 		</div>
+		<!-- Details Div -->
+						<div class="modal fade" id="details" role="dialog">
+							<div class="modal-dialog">
+							  	<!-- Div content-->
+							   <div class="modal-content">
+							        	<div class="modal-header">
+							        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+								        <div class="modal-title">
+								        	<div class="pull-right">
+								          		<span class="rsvp">RSVP</span>
+								          		<button type="button" class="btn btn-xs btn-default btn-custom-2">Yes</button>
+								          		<button type="button" class="btn btn-xs btn-default btn-custom-2">May be</button>
+								          		<button type="button" class="btn btn-xs btn-default btn-custom-2">No</button>
+								          	</div>
+								          		Dish Dash Standup
+							        	</div>
+
+							        	</div>
+							        	<div class="modal-body">
+								        	<div class="row">
+								        		<div class="col-xs-7">
+								        			<p><i class="glyphicon glyphicon-time"></i> 9:30 AM - 9:45 AM, 11 August 2015</p>
+			  										<p class="orange-color"><i class="glyphicon glyphicon-map-marker"></i> Denver, Mysore
+				  										<span class="pull-right">
+			  									
+					  										<span class="badge space">4</span>
+					  										<span class="glyphicon glyphicon-refresh space green-color"></span>
+					  										<i class="fa fa-wifi space green-color"></i>
+					  										<i class="fa fa-microphone space"></i>
+					  										<span class="glyphicon glyphicon-volume-up space green-color"></span>
+					  										<i class="fa fa-television space"></i>
+					  										<span class="glyphicon glyphicon-blackboard space"></span>
+					  										<span class="glyphicons glyphicons-tv"></span>
+				  										</span>
+		  											</p>
+		  											<br />
+		  											<p>
+		  												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, 
+		  											</p>
+								        		</div>
+								        		<div class="col-xs-5">
+								        			<p><strong>Invitees</strong></p>
+							  						<div class="table-responsive">
+								  						<table class="table table-striped">
+								      						<tr>
+														        <td>Sunitha Menon</td>
+														        <td>Yes</td>
+														    </tr>
+														    <tr>
+														        <td>Ashish Kumar</td>
+														        <td>No</td>
+														    </tr>
+														    <tr>
+														        <td>Mahesh D Chinnaswamy</td>
+														        <td>No</td>
+														    </tr>
+														    <tr>
+														        <td>Nidhi Laskar</td>
+														        <td>May be</td>
+														    </tr>
+														    <tr>
+														        <td>Apoorva R Gowda</td>
+														        <td>Yes</td>
+														    </tr>
+														</table>
+													</div>
+								        		</div>
+								        	</div>
+								        	<div class="row comments">
+								        		<ul class="nav nav-tabs">
+												    <li class="active"><a data-toggle="tab" href="#comment">Comments</a></li>
+												    <li><a data-toggle="tab" href="#history">History</a></li>
+												    <li><a data-toggle="tab" href="#setting">Settings</a></li>
+												</ul>
+
+	  											<div class="tab-content">
+												   <div id="comment" class="tab-pane fade in active">
+												    	<div class="row well">
+												    		<div class="col-xs-2">
+												    			<img src="images/man.png"  width="40px" height="40px">
+												    			<h6>18/04/2015</h6>
+												    		</div>
+												    		<div class="col-xs-10">
+												    			<p>
+												    				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+												    			</p>
+												    		</div>
+												    	</div>
+												    	<div class="row well">
+												    		<div class="col-xs-2">
+												    			<img src="images/woman.png" width="40px" height="40px">
+												    			<h6>21/04/2015</h6>
+												    		</div>
+												    		<div class="col-xs-10">
+												    			<p>
+												    				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.
+												    			</p>
+												    		</div>
+												    	</div>
+												    	<br />
+												    	<div class="row user-comment">
+												    		<div class="col-xs-2">
+												    			<img src="images/woman.png" width="40px" height="40px">
+												    		</div>
+												    		<div class="col-xs-10">
+												    			<div class="form-group">
+																    <textarea class="form-control" rows="3" id="" placeholder="Add Comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit
+																    </textarea>
+											  					</div>
+												    		</div>
+								        					<button type="button" class="btn btn-default btn-custom-2 pull-right comment-btn">Add Comment</button>
+												        </div>
+												   </div>
+
+												   <div id="history" class="tab-pane fade">
+												      <div class="row panel">
+												      	<div class="col-xs-4">
+												      		<p>										 <span class="glyphicon glyphicon-calendar"> </span>
+												      		 18/04/2015
+												      		</p>
+												      	</div>
+												      	<div class="col-xs-8">
+												      		<p>
+												      			Krishnaprasad Varma created this meeting
+												      		</p>
+												      	</div>
+												      </div>
+												      <div class="row panel">
+												      	<div class="col-xs-4">
+												      		<p>										 <span class="glyphicon glyphicon-calendar"> </span>
+												      		 18/04/2015
+												      		</p>
+												      	</div>
+												      	<div class="col-xs-8">
+												      		<p>
+												      			Krishnaprasad Varma invited Sunitha K Menon to this meeting
+												      		</p>
+												      	</div>
+												      </div>
+												      <div class="row panel">
+												      	<div class="col-xs-4">
+												      		<p>										 <span class="glyphicon glyphicon-calendar"> </span>
+												      		 18/04/2015
+												      		</p>
+												      	</div>
+												      	<div class="col-xs-8">
+												      		<p>
+												      			Sunitha K Menon accepted the invitation to this meeting
+												      		</p>
+												      	</div>
+												      </div>
+												      <div class="row panel">
+												      	<div class="col-xs-4">
+												      		<p>										 <span class="glyphicon glyphicon-calendar"> </span>
+												      		 21/04/2015
+												      		</p>
+												      	</div>
+												      	<div class="col-xs-8">
+												      		<p>
+												      			Aashish Kumar accepted the invitation to this meeting
+												      		</p>
+												      	</div>
+												      </div>
+												   </div>
+												   <div id="setting" class="tab-pane fade">
+												    	<div class="row">
+												    		<div class="col-sm-6">
+																<p><strong>Transfer the Ownership</strong></p>
+																<hr />
+																   <div class="form-group meeting-search">
+												  							<select class="form-control chosen-select meeting-search" data-placeholder="Search Venues...">
+																				<option value=""></option>
+																	            <option value="DevOps for Developers" selected="selected">Prakash L</option>
+																	            <option value="The Docker Book">Sunitha Menon</option>
+																	            <option value="Docker Hands on">Ashish Kumar</option>
+																	            <option value="Ansible: Up and Running">Mahesh D Chinnaswamy</option>
+																  			</select>
+																	</div>
+																	<div class="checkbox">
+																		<label><input type="checkbox" value="" checked="checked">Remove me from the invitees</label>
+																	</div>
+																	<div class="pull-right">
+												  						<button class="btn btn-sm btn-primary btn-custom">Transfer</a></li>
+												  					</div>
+												    		</div>
+												    		<div class="col-sm-6">
+												    			<p><strong>Choose a Color</strong></p>
+																<hr />
+																   <form role="form">
+																	  <input class="color" type="color" name="favcolor" value="#ff0000">
+																	</form>
+
+																	<div class="pull-right">
+												  						<button class="btn btn-sm btn-primary btn-custom">Save</a></li>
+												  					</div>
+												    		</div>
+												    	</div>
+												   </div>
+												</div>
+								        	</div>
+							   		</div>
+							   </div> 
+							<!-- End of Div content-->
+							</div>
+						</div>
+
+					<!-- End of Details Div -->
 		
 	</div>
+	<script src="chosen-plugin/chosen.jquery.js" type="text/javascript"></script>
+  	<script src="chosen-plugin/docsupport/prism.js" type="text/javascript" charset="utf-8"></script>
+  	<script type="text/javascript">
+    var config = {
+      '.chosen-select'           : {},
+      '.chosen-select-deselect'  : {allow_single_deselect:true},
+      '.chosen-select-no-single' : {disable_search_threshold:10},
+      '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+      '.chosen-select-width'     : {width:"95%"}
+    }
+    for (var selector in config) {
+      $(selector).chosen(config[selector]);
+    }
+  </script>
 </body>
 </html>
