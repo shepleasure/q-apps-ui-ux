@@ -241,7 +241,7 @@ p, a{
   font-size: 20px;
   margin-right: 10px;
 }
-.comments {
+.comments, .schedule {
   padding: 15px;
 }
 .user-comment {
@@ -251,8 +251,8 @@ p, a{
 .comment-btn {
   margin-right: 15px;
 }
-.glyphicon-calendar {
-  padding-right: 10px;
+.glyph-space{
+  padding-right: 5px;
 }
 .meeting-search {
   width: 100%;
@@ -264,4 +264,14 @@ p, a{
   margin-top: 8px;
   width: 100%;
   height: 80px;
+}
+.custom-input{
+  width: 88px !important;
+}
+.schedule-search {
+  width: 100px !important;
+  display: inline;
+}
+.temp {
+  margin-top: 8px;
 }
