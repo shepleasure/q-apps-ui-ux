@@ -237,3 +237,31 @@ p, a{
 .search {
    width: 291px; 
 }
+.rsvp {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.comments {
+  padding: 15px;
+}
+.user-comment {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 15px;
+}
+.comment-btn {
+  margin-right: 15px;
+}
+.glyphicon-calendar {
+  padding-right: 10px;
+}
+.meeting-search {
+  width: 100%;
+}
+.chosen-container {
+  width: 100% !important;
+}
+.color {
+  margin-top: 8px;
+  width: 100%;
+  height: 80px;
+}
