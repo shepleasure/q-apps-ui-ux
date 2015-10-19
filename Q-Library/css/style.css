@@ -117,7 +117,7 @@ p, a{
   background-color: #fff;
   border-radius: 5px;
 }
-.side-bar li.active>a , .side-bar li a:focus {
+.side-bar li.active>a {
    background-color: rgb(93, 179, 109) !important;
 }
 .side-bar h4 {
