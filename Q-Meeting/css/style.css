@@ -183,7 +183,10 @@ p, a{
   margin-top: 10px;
 }
 .glyphicon-triangle-left {
-  margin-right: 5px;
+  margin-left: 10px;
+}
+.glyphicon-triangle-right {
+  margin-right: 10px;
 }
 .nav-tabs>li>a {
   padding-top: 5px !important;
@@ -192,23 +195,23 @@ p, a{
 .nav-tabs>li>.month {
   background-color: #fff !important;
   color: #4D4D4D !important;
-  width: 92.5px;
+  width: 102px;
 }
 .nav-tabs>li>.date {
   background-color: #fff !important;
   color: #4D4D4D !important;
-  width: 225px;
+  width: 248px;
 }
 .nav-tabs>li>.day {
   background-color: #fff !important;
   color: #4D4D4D !important;
-  width: 160px;
+  width: 177px;
 }
 .nav-pills>li>.meeting {
   background-color: #fff !important;
   color: #4D4D4D !important;
-  width: 160px;
-  float: left;
+/*  width: 160px;
+  float: left;*/
 }
 .meeting p {
   font-size: 12px;
@@ -216,7 +219,7 @@ p, a{
 .meeting i {
   margin-right: 5px;
 }
-.nav-tabs>li.active>a, .nav-tabs>li.hover>a, .my-pills>li.active>a{
+.active-tab, .my-pills>li.active>a{
   background-color: rgb(93, 179, 109) !important;
   color: #fff !important;
 }
@@ -287,4 +290,8 @@ p, a{
 }
 .disable {
   color: #ccc;
+}
+.filter {
+  margin-top: 8px !important;
+  margin-right: 10px;
 }

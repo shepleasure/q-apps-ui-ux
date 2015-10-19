@@ -3,6 +3,7 @@
 <head>
 	<title>Q-Meeting | Admin</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Bootstrap CDN -->
@@ -24,22 +25,22 @@
 <body>
  	<div class="container-fluid">
 		<div class="row header">
-			<div class="col-xs-4">
+			<div class="col-sm-4">
 				<img src="images/logo.png" class="img-header" alt="Q-Meeting Logo"/>
 			</div>
-			<div class="col-xs-4 user">
-				<form class="navbar-form text-center" role="search">
+			<div class="col-sm-4 user">
+				<form class="navbar-form text-center hidden-xs" role="search">
         			<div class="input-group">
-            			<input type="text" class="form-control" placeholder="Search my Meetings.." name="search-term" id="search-term">
+            			<input type="text" class="form-control hidden-xs" name="search-term" id="search-term">
             			<div class="input-group-btn">
-                			<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i>
+                			<button class="btn btn-default hidden-xs" type="submit"><i class="glyphicon glyphicon-search"></i>
                 			</button>
             			</div>
         			</div>
        			</form>
 			</div>
-			<div class="col-xs-4 text-right user">
-				<ul class="nav navbar-nav navbar-right">
+			<div class="col-sm-4 text-right user hidden-xs">
+				<ul class="nav navbar-nav navbar-right ">
         			<li>
         				<a href="#"><span class="glyphicon glyphicon-user"></span> Krishnaprasad Varma</a>
         			</li>
@@ -49,16 +50,37 @@
       			</ul>
 			</div>
 		</div>
-		<br/>
+		<div class="row visible-xs">
+			<nav class="navbar navbar-default navbar-custom">
+				<div class="navbar-header">
+      				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>                        
+				    </button>
+      				<a class="navbar-brand visible-xs" href="#"><span class="glyphicon glyphicon-user"></span> Krishnaprasad Varma</a>
+    			</div>
+    			<div class="collapse navbar-collapse" id="myNavbar">
+	      			<ul class="nav navbar-nav menu">
+	        			<li><a href="#">Filter</a></li>
+	        			<li><a href="#">Schedule a Meeting</a></li>
+	        			<li class="visible-xs">
+        				<a href="#"><span class="glyphicon glyphicon-log-out" id="sign-out"></span> Sign out</a>
+        				</li>
+	      			</ul>
+      			</div>
+    		</nav>
+    	</div>
+    	<br />
     	<div class="row sub-header">
     		<div class="col-sm-4">
     			<h2>My Meetings</h2>
     			<br />
     		</div>
-    		<div class="col-sm-8">
-    			<div class="pull-right">
-    				<a href="#" class="btn btn-primary btn-custom" data-toggle="modal" data-target="#">Filter</a>					  
-					<a href="#" class="btn btn-primary btn-custom" data-toggle="modal" data-target="#schedule">Schedule a Meeting</a>
+    		<div class="col-xs-12 col-sm-8">
+    			<div class="pull-right mobile-button">
+    				<a href="#" class="btn btn-default filter" data-toggle="modal" data-target="#">Filter</a>					  
+					<a href="#" class="btn btn-primary btn-custom schedule-meeting" data-toggle="modal" data-target="#schedule">Schedule a Meeting</a>
     			</div>
     		</div>
 		</div>
@@ -150,48 +172,47 @@
 						</div>
 
 					<!-- End of Schedule Meeting Div -->
-	<div class="container">
-		<div class="row text-center">
-				<ul class="nav nav-tabs">
-					<span class="glyphicon glyphicon-triangle-left pull-left"></span>
-						<li><a href="#" class="month">Jan</a></li>
-					    <li><a href="#" class="month">Feb</a></li>
-					    <li><a href="#" class="month">Mar</a></li>
-					    <li><a href="#" class="month">Apr</a></li>
-					    <li><a href="#" class="month">May</a></li>
-					    <li><a href="#" class="month">Jun</a></li>
-					    <li><a href="#" class="month">Jul</a></li>
-					    <li class="active"><a href="#" class="month">Aug</a></li>
-					    <li><a href="#" class="month">Sep</a></li>
-					    <li><a href="#" class="month">Oct</a></li>
-					    <li><a href="#" class="month">Nov</a></li>
-					    <li><a href="#" class="month">Dec</a></li>
-				    <span class="glyphicon glyphicon-triangle-right pull-right"></span> 
-				</ul>
+	<div class="container-fluid">
+		<div class="row text-center visible-xs">
+				<span class="glyphicon glyphicon-triangle-left pull-left"></span>
+				<button type="button" class="btn btn-default btn-tab">Jan 2nd</button>
+				<span class="glyphicon glyphicon-triangle-right pull-right"></span> 
 		</div>
-		<div class="row text-center">
-				<ul class="nav nav-tabs">
+		<div class="row text-center hidden-xs">
 					<span class="glyphicon glyphicon-triangle-left pull-left"></span>
-						<li><a href="#" class="date">1st-3rd</a></li>
-					    <li><a href="#" class="date">4th-10th</a></li>
-					    <li class="active"><a href="#" class="date">11th-17th</a></li>
-					    <li><a href="#" class="date">18th-24th</a></li>
-					    <li><a href="#" class="date">25th-31st</a></li>
+						<button type="button" class="btn btn-default btn-tab active-tab">Jan</button>
+						<button type="button" class="btn btn-default btn-tab">Feb</button>
+						<button type="button" class="btn btn-default btn-tab">Mar</button>
+						<button type="button" class="btn btn-default btn-tab">Apr</button>
+						<button type="button" class="btn btn-default btn-tab">May</button>
+						<button type="button" class="btn btn-default btn-tab">Jun</button>
+						<button type="button" class="btn btn-default btn-tab">Jul</button>
+						<button type="button" class="btn btn-default btn-tab">Aug</button>
+						<button type="button" class="btn btn-default btn-tab">Sep</button>
+						<button type="button" class="btn btn-default btn-tab">Oct</button>
+						<button type="button" class="btn btn-default btn-tab">Nov</button>
+						<button type="button" class="btn btn-default btn-tab">Dec</button>
 				    <span class="glyphicon glyphicon-triangle-right pull-right"></span> 
-				</ul>
 		</div>
-		<div class="row text-center">
-				<ul class="nav nav-tabs">
+		<div class="row text-center hidden-xs">
 					<span class="glyphicon glyphicon-triangle-left pull-left"></span>
-						<li><a href="#" class="day">Monday(11)</a></li>
-					    <li class="active"><a href="#" class="day">Tuesday(12)</a></li>
-					    <li><a href="#" class="day">Wednesday(13)</a></li>
-					    <li><a href="#" class="day">Thursday(14)</a></li>
-					    <li><a href="#" class="day">Friday(15)</a></li>
-					    <li><a href="#" class="day">Saturday(16)</a></li>
-					    <li><a href="#" class="day">Sunday(17)</a></li>
+						<button type="button" class="btn btn-default btn-tab-date active-tab">1st-3rd</button>
+						<button type="button" class="btn btn-default btn-tab-date">4th-10th</button>
+						<button type="button" class="btn btn-default btn-tab-date">11th-17th</button>
+						<button type="button" class="btn btn-default btn-tab-date">18th-24th</button>
+						<button type="button" class="btn btn-default btn-tab-date">25th-31st</button>
 				    <span class="glyphicon glyphicon-triangle-right pull-right"></span> 
-				</ul>
+		</div>
+		<div class="row text-center hidden-xs">
+					<span class="glyphicon glyphicon-triangle-left pull-left"></span>
+						<button type="button" class="btn btn-default btn-tab-day">Monday(11)</button>
+						<button type="button" class="btn btn-default btn-tab-day active-tab">Tuesday(12)</button>
+						<button type="button" class="btn btn-default btn-tab-day">Wednesday(13)</button>
+						<button type="button" class="btn btn-default btn-tab-day">Thursday(14)</button>
+						<button type="button" class="btn btn-default btn-tab-day">Friday(15)</button>
+						<button type="button" class="btn btn-default btn-tab-day">Saturday(16)</button>
+						<button type="button" class="btn btn-default btn-tab-day">Sunday(17)</button>
+					<span class="glyphicon glyphicon-triangle-right pull-right"></span> 
 		</div>
 		<br />
 		<div class="row">
@@ -247,7 +268,7 @@
 				</li>	
 			</ul>
 		</div>
-		<div class="row">
+		<div class="row hidden-xs">
 			<ul class="nav nav-pills my-pills">
 				<li>
 					<a href="#" class="meeting" data-toggle="modal" data-target="#details">
@@ -300,7 +321,7 @@
 				</li>	
 			</ul>
 		</div>
-		<div class="row">
+		<div class="row hidden-xs">
 			<ul class="nav nav-pills my-pills">
 				<li>
 					<a href="#" class="meeting" data-toggle="modal" data-target="#details">
@@ -353,7 +374,7 @@
 				</li>	
 			</ul>
 		</div>
-		<div class="row">
+		<div class="row hidden-xs">
 			<ul class="nav nav-pills my-pills">
 				<li>
 					<a href="#" class="meeting" data-toggle="modal" data-target="#details">
