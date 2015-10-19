@@ -27,13 +27,13 @@ body {
   height: 100%;
 }
 .btn-success {
-  background-color: #22C976 !important;
+  background-color: #65c178 !important;
 }
 .btn-success:hover {
   background-color: #1b9d5c !important;
 }
 .btn-success:active {
-  border-color: #22C976 !important;
+  border-color: #65c178 !important;
 }
 .glyphicon-edit, .glyphicon-trash {
   color: #4D4D4D;
@@ -55,13 +55,13 @@ body {
   padding-right:10px;
 }
 .btn-custom {
-  background-color: #22C976 !important;
+  background-color: #65c178 !important;
   padding: 6px 12px 6px 12px !important;
   margin-top: 8px;
   border-color: #1b9d5c !important;
 }
 .btn-custom-2 {
-  background-color: #22C976 !important;
+  background-color: #65c178 !important;
   color: #fff !important;
   border-color: #1b9d5c !important;
 }
@@ -83,13 +83,13 @@ body {
 }
 .navbar-custom .navbar-nav>.active>a   {
   background-color: #4D4D4D !important;
-  color: #22C976 !important;
+  color: #65c178 !important;
 }
 .user {
   margin-top: 20px;
 }
 #sign-out {
-  color: #22C976;
+  color: #65c178;
 }
 p, a{
   font-family: 'Roboto', sans-serif;
@@ -117,10 +117,10 @@ p, a{
   border-radius: 5px;
 }
 .side-bar li.active>a , .side-bar li a:focus {
-   background-color: #4d4d4d !important;
+   background-color: rgb(93, 179, 109) !important;
 }
 .side-bar h4 {
-  color: #22C976 !important;
+  color: #000000 !important;
 }
 .sub-header h2 {
   color: #fff;
@@ -129,7 +129,7 @@ p, a{
   margin-top: 10px !important;
 }
 .active-book p, .green-color{
-  color: #22C976;
+  color: #65c178;
 }
 .inline-custom {
   padding: 2px !important;
@@ -138,7 +138,7 @@ p, a{
   padding-left: 20px;
 }
  .modal-header, .modal-title, .close {
-  background-color: #22C976;
+  background-color: #65c178;
   color:white !important;
   text-align: center;
   font-size: 30px;
@@ -151,7 +151,7 @@ p, a{
   color: #d9534f !important;
 }
 .address {
-  color: #6D6E70;
+ color: #4D4D4D;
 }
 .address:focus {
   color: #fff;
@@ -164,7 +164,7 @@ p, a{
   margin-right: 5px;
 }
 .place {
-  color: #22C976;
+  color: #65c178;
   margin-left: 20px;
 }
 .place:hover {
@@ -181,6 +181,10 @@ p, a{
 }
 .glyphicon-triangle-left {
   margin-right: 5px;
+}
+.nav-tabs>li>a {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
 }
 .nav-tabs>li>.month {
   background-color: #fff !important;
@@ -210,7 +214,7 @@ p, a{
   margin-right: 5px;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.hover>a, .my-pills>li.active>a{
-  background-color: #22C976 !important;
+  background-color: rgb(93, 179, 109) !important;
   color: #fff !important;
 }
 .my-pills>li.active>a h5 {
@@ -274,4 +278,10 @@ p, a{
 }
 .temp {
   margin-top: 8px;
+}
+.grey-color {
+  color: #4D4D4D;
+}
+.disable {
+  color: #ccc;
 }
