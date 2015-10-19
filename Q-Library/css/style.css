@@ -108,9 +108,10 @@ p, a{
 .author-user {
   color: #6d6e70;
 }
-/*.badge {
-  background-color: #22C976 !important;
-}*/
+.badge-active {
+  background-color: #fff !important;
+  color: rgb(93, 179, 109) !important; 
+}
 .side-bar li {
   margin-bottom: 20px;
   background-color: #fff;
