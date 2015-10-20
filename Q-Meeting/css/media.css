@@ -49,6 +49,10 @@
 .nav-pills>li {
 		float: none !important;
 	}
+.full-button {
+	padding-left: 4px !important;
+	padding-right: 4px !important;
+}
 }/* End of Custom, iPhone Retina */ 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 481px) and (max-width : 768px) {
@@ -101,6 +105,7 @@
 .nav-pills>li {
 		float: none !important;
 	}
+
 }
 
 /* Small Devices, Tablets */
@@ -228,4 +233,10 @@
 	width: 13.9%;
 	margin-right: 1px;
 }
+}
+@media screen and (min-width: 768px) {
+	
+	#schedule .modal-dialog  {width:90%;}
+	#details .modal-dialog  {width:90%;}
+
 }
