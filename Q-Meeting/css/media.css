@@ -53,6 +53,20 @@
 	padding-left: 4px !important;
 	padding-right: 4px !important;
 }
+.details-title {
+	font-size: 16px;
+}
+.rsvp {
+	font-size: 14px;
+}
+.details-user {
+	margin-left: -20px;
+	margin-right: 20px;
+}
+.comment-btn {
+	font-size: 12px !important;
+	padding:4px !important;
+}
 }/* End of Custom, iPhone Retina */ 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 481px) and (max-width : 768px) {
@@ -238,5 +252,6 @@
 	
 	#schedule .modal-dialog  {width:90%;}
 	#details .modal-dialog  {width:90%;}
-	
+	#editMeeting .modal-dialog  {width:85%;}
+
 }
