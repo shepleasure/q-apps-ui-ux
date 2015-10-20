@@ -79,7 +79,7 @@
     		</div>
     		<div class="col-xs-12 col-sm-8">
     			<div class="pull-right mobile-button">
-    				<a href="#" class="btn btn-default filter" data-toggle="modal" data-target="#">Filter</a>					  
+    				<a href="#" class="btn btn-default filter" data-toggle="modal" data-target="#filter">Filter</a>					  
 					<a href="#" class="btn btn-primary btn-custom schedule-meeting" data-toggle="modal" data-target="#schedule">Schedule a Meeting</a>
     			</div>
     		</div>
@@ -708,6 +708,79 @@
 								        	</div>
 							   		</div>
 							   </div> 
+							<!-- End of Div content-->
+							</div>
+						</div>
+
+					<!-- End of Details Div -->
+		<!-- Filter Div -->
+						<div class="modal fade" id="filter" role="dialog">
+							<div class="modal-dialog">
+							  	<!-- Div content-->
+							    <div class="modal-content">
+							        <div class="modal-header">
+							        <button type="button" class="close" data-dismiss="modal">&times;</button>
+									    <div class="modal-title">
+									        Filter
+								        </div>
+								    </div>
+							        <div class="modal-body">
+								    	<div class="row">
+								    		<div class="col-sm-6">
+								    			<p><i class="glyphicon glyphicon-map-marker orange-color glyph-space"></i>Location</p>
+								    		</div>
+								    		<div class="col-sm-6">
+								    			<div class="form-group inline-block-full">
+													<select class="form-control chosen-select" data-placeholder="Search Venues...">
+														<option value=""></option>
+														<option value="DevOps for Developers" selected="selected">Denver, Mysore</option>
+														<option value="The Docker Book">Dubai</option>
+														<option value="Docker Hands on">Costa Rica</option>
+														<option value="Ansible: Up and Running">Mysore</option>
+													</select>
+												</div>
+								    		</div>
+								    	</div>
+								    	<div class="row">
+								    		<div class="col-sm-6">
+								    			<p><i class="glyphicon glyphicon-user glyph-space"></i>Organiser</p>
+								    		</div>
+								    		<div class="col-sm-6">
+								    			<div class="form-group inline-block-full">
+													<select class="form-control chosen-select" data-placeholder="Search Venues...">
+														<option value=""></option>
+														<option value="DevOps for Developers" selected="selected">Prakash S L</option>
+														<option value="The Docker Book">Dubai</option>
+														<option value="Docker Hands on">Costa Rica</option>
+														<option value="Ansible: Up and Running">Mysore</option>
+													</select>
+												</div>
+								    		</div>
+								    	</div>
+								    	<div class="row">
+								    		<div class="col-sm-6">
+								    			<p><i class="glyphicon glyphicon-user glyph-space"></i>Has invited</p>
+								    		</div>
+								    		<div class="col-sm-6">
+								    			<div class="form-group inline-block-full">
+													<select class="form-control chosen-select" data-placeholder="Search Venues...">
+														<option value=""></option>
+														<option value="DevOps for Developers" selected="selected">Sunitha K Menon</option>
+														<option value="The Docker Book">Dubai</option>
+														<option value="Docker Hands on">Costa Rica</option>
+														<option value="Ansible: Up and Running">Mysore</option>
+													</select>
+												</div>
+								    		</div>
+								    	</div>		
+								    </div>
+								    <div class="modal-footer">
+								    	<button type="button" class="btn btn-default btn-custom-2 pull-right">Filter</button>
+								    	<button type="button" class="btn btn-default pull-right space">Reset Filter</button>
+					  					<p class="text-left orange-color"><span class="glyphicon glyphicon-bell"></span><strong>Click on the Filter button once you select filters.</strong></p>
+					  					<p class="text-left save-align">In order to reset the Filter button again and this pop up will appear again. Click on Reset Filter button.</p>
+								    </div>
+							   	</div>
 							<!-- End of Div content-->
 							</div>
 						</div>

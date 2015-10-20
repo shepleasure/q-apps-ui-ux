@@ -297,6 +297,11 @@ p, a{
   width: 80%;
   margin-top: -10px;
 }
+.inline-block-full {
+  display: inline-block;
+  width: 100%;
+  margin-top: -10px;
+}
 .invitees-form {
   margin-top: -7px;
 }
