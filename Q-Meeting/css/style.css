@@ -275,9 +275,6 @@ p, a{
   width: 100%;
   height: 80px;
 }
-.custom-input{
-  width: 88px !important;
-}
 .schedule-search {
   width: 100px !important;
   display: inline;
@@ -294,4 +291,18 @@ p, a{
 .filter {
   margin-top: 8px !important;
   margin-right: 10px;
+}
+.inline-block {
+  display: inline-block;
+  width: 80%;
+  margin-top: -10px;
+}
+.invitees-form {
+  margin-top: -7px;
+}
+.space-bottom {
+  margin-bottom: 10px;
+}
+.full-button {
+  width: 100%;
 }
