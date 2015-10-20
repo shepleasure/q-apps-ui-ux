@@ -260,6 +260,7 @@ p, a{
 }
 .comment-btn {
   margin-right: 15px;
+  margin-top: 20px;
 }
 .glyph-space{
   padding-right: 5px;
@@ -310,4 +311,7 @@ p, a{
 }
 .full-button {
   width: 100%;
+}
+.edit-meeting {
+  margin-left: 90%;
 }
