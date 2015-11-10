@@ -168,3 +168,17 @@ p, a{
 .search {
    width: 291px; 
 }
+.purchased {
+  font-size: 14px;
+  color: #d9534f;
+}
+.space {
+  margin-right: 5px;
+}
+.borrow-profile {
+  margin-top: -33px !important;
+  margin-bottom: 20px;
+}
+.left {
+  margin-left: -140px;
+}
