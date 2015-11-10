@@ -22,6 +22,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Alike' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
  	<div class="container-fluid">
@@ -343,9 +344,75 @@
 	  										<span class="glyphicon glyphicon-trash"></span>
 	  									</a>
 	  								</div>
-	  								<p><a class="publication" href="#">123891723</a></p>
+	  								<p><a class="publication" href="#" data-toggle="modal" data-target="#borrower">123891723</a></p>
 	  							</div>
 	  						</div>
+	  						<!-- Number link Div -->
+						<div class="modal fade" id="borrower" role="dialog">
+							<div class="modal-dialog">
+							  	<!-- Div content-->
+							    <div class="modal-content">
+							        	<div class="modal-header">
+							        	<button type="button" class="close" data-dismiss="modal">×</button>
+								        <div class="modal-title details-title">
+								        	<div class="pull-right">
+								          		<span class="purchased">Purchased Date: 11/02/2015</span>
+								          
+								          	</div>
+								          		<span class="left">Sl No:123891723</span>
+							        	</div>
+
+							        	</div>
+							        	<div class="modal-body">
+							        		
+							        			<div class="alert alert-danger">
+							        				<i class="fa fa-info-circle space"></i>
+												  <strong>Danger!</strong> This book is currently not available in Library.
+												</div>
+													<div class="pull-right">
+					  									<button type="button" class="btn btn-xs btn-default btn-custom-2" >Update as Returned</button>
+					  								</div>
+					  								<p><strong>Book currently with</strong></p>
+							        		
+							        		<hr/>
+							        		<div class="col-xs-2 details-user">
+												<img src="images/man.png" width="40px" height="40px">
+											</div>
+											<div class="col-xs-10 borrow-profile">
+												<h3 class="green-color">Sunitha K menon</h3>
+												<p>Borrowed on: Sept 29th 2015</p>
+												<p>To be returned on: Oct 14th 2015</p>
+											</div>
+											<p><strong>Book Circulation History</strong></p>
+											<hr/>
+								        	
+								        	<div class="table-responsive">
+	  											<table class="table table-striped">
+					      						<tr>
+											        <th>Borrower</th>
+											        <th>Borrowed Date</th>
+											        <th>Returned Date</th>
+											    </tr>
+											    <tr>
+											        <td>Sunitha K Menon</td>
+											        <td>Sept 20 2015</td>
+											        <td>-</td>
+											    </tr>
+											     <tr>
+											        <td>Varun Haridas</td>
+											        <td>Aug 13 2015</td>
+											        <td>Aug 24 2015</td>
+											    </tr>
+											    </table>
+											    </div>
+							   		</div>
+							   </div> 
+							<!-- End of Div content-->
+							</div>
+						</div>
+
+
+					<!-- End of number link Div -->
 	  						<!-- Add a Book Div -->
 							<div class="modal fade" id="editRegister" role="dialog">
 								<div class="modal-dialog">
